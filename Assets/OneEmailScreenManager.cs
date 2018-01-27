@@ -9,6 +9,9 @@ public class OneEmailScreenManager : MonoBehaviour {
     //The text markers in our screen
     public Text SENDER_TEXT, SUBJECT_TEXT, DATE_TEXT;
 
+    //The text for body
+    public Text BODY_TEXT;
+
     //The image for the body image
     public Image BODY_IMAGE;
 
@@ -30,7 +33,17 @@ public class OneEmailScreenManager : MonoBehaviour {
     {
         SENDER = EMAIL.SENDER;
         SUBJECT = EMAIL.SUBJECT;
-        BODY_IMAGE.sprite = EMAIL.BODY;
+        if(EMAIL.BODY_IMG != null)
+        {
+            BODY_IMAGE.sprite = EMAIL.BODY_IMG;
+        }
+        else
+        {
+            string TEMP = EMAIL.BODY_TEXT;
+            TEMP = TEMP.Replace("NEWLINE", "\n");
+            BODY_TEXT.text = TEMP;
+        }
+     
         DATE = EMAIL.DATE;
     }
 

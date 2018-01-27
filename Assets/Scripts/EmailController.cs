@@ -32,8 +32,11 @@ public class EmailController : MonoBehaviour {
     //The subject line for this email
     public string SUBJECT;
 
-    //The body of text for this email
-    public Sprite BODY;
+    //The body image if it has images and a weird layout
+    public Sprite BODY_IMG;
+
+    //The body string if it is just words
+    public string BODY_TEXT;
 
     //The sender for this email
     public string SENDER;

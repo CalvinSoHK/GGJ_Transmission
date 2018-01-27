@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //Manages all the things on the all emails screen
 public class AllEmailScreenManager : MonoBehaviour {
@@ -14,24 +15,21 @@ public class AllEmailScreenManager : MonoBehaviour {
     //Header of the given email column. Uses as reference for position
     public GameObject HEADER;
 
+    //Content panel to add our entries into
+    public GameObject CONTENT;
+
     //The x position of all entries
     public float X_POS = 0;
 
     //The y position of the first entry, and the offset for each after
     public float Y_POS_INIT = 0, Y_POS_DIFF = 30;
 
+    //Color used for when it is accepted
+    public Color ACCEPTED, REJECTED;
+
 	//Function called when starting that inits the list, given a list of all emails we need to display
     public void InitList(List<EmailController> LIST)
     {
-        
-        //Clear every entry on the list
-        for(int i = 0; i < ENTRY_LIST.Count; i++)
-        {
-            //extract it so we can delete it.
-            GameObject TEMP = ENTRY_LIST[0].gameObject;
-            ENTRY_LIST.RemoveAt(0);
-            Destroy(TEMP);
-        }
 
         //Populate the list
         //Save position outside so they spawn in the right place everytime
@@ -41,7 +39,7 @@ public class AllEmailScreenManager : MonoBehaviour {
         {
             //Instantiate a new entry
             GameObject TEMP = Instantiate(ENTRY_OBJECT);
-            TEMP.transform.SetParent(transform, false);
+            TEMP.transform.SetParent(CONTENT.transform, false);
             TEMP.transform.position = POS;
 
             //Add the values to the entry
@@ -54,5 +52,48 @@ public class AllEmailScreenManager : MonoBehaviour {
             //Add the offset to the pos for the next entry
             POS += new Vector3(0, Y_POS_DIFF, 0);
         }
+    }
+
+    //Function called to destroy all entries on display
+    public void DestroyList()
+    {
+        int COUNT = ENTRY_LIST.Count - 1;
+        for(int i = COUNT; i >= 0; i--)
+        {
+            //Debug.Log("destroying index: " + i);
+            GameObject TEMP = ENTRY_LIST[i].gameObject;
+            ENTRY_LIST.RemoveAt(i);
+            Destroy(TEMP);
+        }
+        //Debug.Log("Entry list has a count of: " + ENTRY_LIST.Count);
+    }
+
+    //Function called to update the list, showing the email's current status
+    public void UpdateList(List<EmailManager.PlayerAction> ACTION_LIST)
+    {
+        if(ACTION_LIST.Count == ENTRY_LIST.Count)
+        {
+            int index = 0;
+            foreach (EntryController ENTRY in ENTRY_LIST)
+            {
+                switch (ACTION_LIST[index])
+                {
+                    case EmailManager.PlayerAction.Accepted:
+                        ENTRY.GetComponent<Image>().color = ACCEPTED;
+                        break;
+                    case EmailManager.PlayerAction.Declined:
+                        ENTRY.GetComponent<Image>().color = REJECTED;
+                        break;
+                    default:
+                        break;
+                }
+                index++;
+            }
+        }
+        else
+        {
+            Debug.Log("For some reason action and entry list don't have the same count. Entry: " + ENTRY_LIST.Count + " Action: " + ACTION_LIST.Count);
+        }
+       
     }
 }
