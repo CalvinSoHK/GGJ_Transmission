@@ -9,11 +9,18 @@ public class EmailManager : MonoBehaviour {
     public static EmailManager instance = null;
 
     //Possible actions taken by the player
-    public enum PlayerAction { Ignored, Accepted, Declined };
+    public enum PlayerAction { Ignored, Accepted, Declined, Important };
 
     //List of all emails
+    //[HideInInspector]
     public List<EmailController> EMAIL_LIST = new List<EmailController>();
     public List<PlayerAction> ACTION_LIST = new List<PlayerAction>();
+
+    //List of emails to add depending on the week
+    public List<EmailController> WEEK_ONE_LIST = new List<EmailController>(), WEEK_TWO_LIST = new List<EmailController>(), WEEK_THREE_LIST = new List<EmailController>(), WEEK_FOUR_LIST = new List<EmailController>();
+
+    //The week we are on
+    public int WEEK = 0;
 
     //State of email site. Either viewing all emails or the body of an email
     public enum EmailSiteState { AllEmails, OneEmail };
@@ -23,10 +30,13 @@ public class EmailManager : MonoBehaviour {
     public int HAPPINESS = 0;
 
     //The two gameobjects that constitute our two different type of screens
-    public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN;
+    public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN, PROCESS_SCREEN, STATUS_BAR;
 
     //The selected email
     EmailController SELECTED_EMAIL;
+
+    //The name of the player
+    public string PLAYER_NAME;
 
 	//Function to evaluate all emails
     public void EvaluateEmails()
@@ -39,28 +49,38 @@ public class EmailManager : MonoBehaviour {
         foreach(PlayerAction ACTION in ACTION_LIST)
         {
             //If the email was ignored or accepted.
-            if(ACTION == PlayerAction.Ignored || ACTION == PlayerAction.Accepted)
+            if(ACTION != PlayerAction.Declined)
             {
                 //Add the accepted email to the next round.
-                NEW_EMAIL_LIST.Add(EMAIL_LIST[index].ACCEPTED_NEXT);
+                if(EMAIL_LIST[index].ACCEPTED_NEXT != null)
+                {
+                    NEW_EMAIL_LIST.Add(EMAIL_LIST[index].ACCEPTED_NEXT);
+                }
+             
             }
             else //If the email was rejected
             {
                 //Add the rejected email to the next round
-                NEW_EMAIL_LIST.Add(EMAIL_LIST[index].REJECTED_NEXT);
+                if(EMAIL_LIST[index].REJECTED_NEXT != null)
+                {
+                    NEW_EMAIL_LIST.Add(EMAIL_LIST[index].REJECTED_NEXT);
+                }            
             }
 
             //Handle happiness for that email
             HandleHappiness(EMAIL_LIST[index]);
+
+            //Increment index
+            index++;
         }
 
-        //Set the new email list
+        ALL_EMAIL_SCREEN.GetComponent<AllEmailScreenManager>().DestroyList();
+
         EMAIL_LIST.Clear();
         foreach(EmailController EMAIL in NEW_EMAIL_LIST)
         {
             EMAIL_LIST.Add(EMAIL);
-        }
-        index++;
+        }    
     }
 
     //Helper function for evaluate that adds the right happiness value
@@ -84,14 +104,21 @@ public class EmailManager : MonoBehaviour {
                 }
                 else //If the email is accpeted or ignored
                 {
-                    HAPPINESS += EMAIL.VALUE;
+                    if (EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
+                    {
+                        HAPPINESS += 2 * EMAIL.VALUE;
+                    }
+                    else
+                    {
+                        HAPPINESS += EMAIL.VALUE;
+                    }
                 }
                 break;
             case EmailController.EmailType.GoodAd:
                 //If it was not declined, as in accepted or ignored
                 if(ACTION_LIST[index] != PlayerAction.Declined)
                 {
-                    HAPPINESS += EMAIL.VALUE;
+                    HAPPINESS += EMAIL.VALUE;                 
                 }
                 break;
             case EmailController.EmailType.Bad:
@@ -101,7 +128,14 @@ public class EmailManager : MonoBehaviour {
                 }
                 else
                 {
-                    HAPPINESS -= EMAIL.VALUE;
+                    if (!EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
+                    {
+                        HAPPINESS -= 2 * EMAIL.VALUE;
+                    }
+                    else
+                    {
+                        HAPPINESS -= EMAIL.VALUE;
+                    }
                 }
                 break;
             case EmailController.EmailType.BadAd:
@@ -142,7 +176,6 @@ public class EmailManager : MonoBehaviour {
     public void AcceptEmail()
     {
         //Sets the email to accepted
-        //Debug.Log(GetIndex(SELECTED_EMAIL));
         ACTION_LIST[GetIndex(SELECTED_EMAIL)] = PlayerAction.Accepted;
     }
 
@@ -151,6 +184,12 @@ public class EmailManager : MonoBehaviour {
     {
         //Sets the email to rejected
         ACTION_LIST[GetIndex(SELECTED_EMAIL)] = PlayerAction.Declined;
+    }
+
+    //Function that sets the selected emails status to Important
+    public void AcceptAndMarkImportantEmail()
+    {
+        ACTION_LIST[GetIndex(SELECTED_EMAIL)] = PlayerAction.Important;
     }
 
     //Helper function that gets the index of a given email
@@ -170,11 +209,52 @@ public class EmailManager : MonoBehaviour {
     public void InitActionList()
     {
         ACTION_LIST.Clear();
-
+        int count = 0;
         foreach(EmailController EMAIL in EMAIL_LIST)
         {
+            Debug.Log("Count: " + count);
             ACTION_LIST.Add(PlayerAction.Ignored);
+            count++;
         }
+    }
+
+    //Load in extra emails for a given week
+    public void LoadEmails()
+    {
+        //Add emails for a given week to the list
+        switch (WEEK)
+        {
+            case 1:
+                foreach(EmailController EMAIL in WEEK_ONE_LIST)
+                {
+                    EMAIL_LIST.Add(EMAIL);
+                }
+                break;
+            case 2:
+                foreach (EmailController EMAIL in WEEK_TWO_LIST)
+                {
+                    EMAIL_LIST.Add(EMAIL);
+                }
+                break;
+            case 3:
+                foreach (EmailController EMAIL in WEEK_THREE_LIST)
+                {
+                    EMAIL_LIST.Add(EMAIL);
+                }
+                break;
+            case 4:
+                foreach (EmailController EMAIL in WEEK_FOUR_LIST)
+                {
+                    EMAIL_LIST.Add(EMAIL);
+                }
+                break;
+        }
+    }
+
+    //Load in a possible status
+    public void LoadStatus()
+    {
+        STATUS_BAR.GetComponent<StatusController>().LoadStatus(WEEK, HAPPINESS);
     }
 
     //Set the game state manager
@@ -206,12 +286,6 @@ public class EmailManager : MonoBehaviour {
     //Handle states
     private void Update()
     {
-        //Debug input
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ALL_EMAIL_SCREEN.GetComponent<AllEmailScreenManager>().InitList(EMAIL_LIST);
-        }
-
         //Get the game state
         GameStateManager.GameState GAME_STATE = GameStateManager.STATE;
 
@@ -219,9 +293,21 @@ public class EmailManager : MonoBehaviour {
         switch (GAME_STATE)
         {
             case GameStateManager.GameState.Init:
+                //Increment our week number
+                WEEK++;
+
+                //Load any emails taht start on this week
+                LoadEmails();
+
                 //Init the actions list, set our day begin screen off, then change states.
                 InitActionList();
+
+                //Load in a status and turn it on
+                LoadStatus();
+                STATUS_BAR.SetActive(true);
+
                 DAY_BEGIN_SCREEN.SetActive(false);
+                ALL_EMAIL_SCREEN.GetComponent<AllEmailScreenManager>().InitList(EMAIL_LIST);
                 GameStateManager.SetCurrentState(GameStateManager.GameState.PlayerInput);
                 break;
             case GameStateManager.GameState.PlayerInput:
@@ -232,16 +318,22 @@ public class EmailManager : MonoBehaviour {
                         //If this isn't on, turn it on.
                         if (!ALL_EMAIL_SCREEN.activeSelf)
                         {
+                            DAY_BEGIN_SCREEN.SetActive(false);
+                            PROCESS_SCREEN.SetActive(false);
                             ONE_EMAIL_SCREEN.SetActive(false);
                             ALL_EMAIL_SCREEN.SetActive(true);
-                            ALL_EMAIL_SCREEN.GetComponent<AllEmailScreenManager>().InitList(EMAIL_LIST);
                         }
+
+                        //Update the list
+                        ALL_EMAIL_SCREEN.GetComponent<AllEmailScreenManager>().UpdateList(ACTION_LIST);
                         break;
                     case EmailSiteState.OneEmail:
                         ONE_EMAIL_SCREEN.GetComponent<OneEmailScreenManager>().SetEmail(SELECTED_EMAIL);
                         //If this isn't on, turn it on, and turn the other one off.
                         if (!ONE_EMAIL_SCREEN.activeSelf)
                         {
+                            DAY_BEGIN_SCREEN.SetActive(false);
+                            PROCESS_SCREEN.SetActive(false);
                             ALL_EMAIL_SCREEN.SetActive(false);
                             ONE_EMAIL_SCREEN.SetActive(true);
                         }
@@ -252,8 +344,24 @@ public class EmailManager : MonoBehaviour {
                 }
                 break;
             case GameStateManager.GameState.Processing:
+                //Disable relevent screens and enable the right one.
+                if (!PROCESS_SCREEN.activeSelf)
+                {
+                    DAY_BEGIN_SCREEN.SetActive(false);
+                    ALL_EMAIL_SCREEN.SetActive(false);
+                    ONE_EMAIL_SCREEN.SetActive(false);
+                    STATUS_BAR.SetActive(false);
+                    PROCESS_SCREEN.SetActive(true);
+                }
                 break;
             case GameStateManager.GameState.Waiting:
+                if (!DAY_BEGIN_SCREEN.activeSelf)
+                {
+                    ALL_EMAIL_SCREEN.SetActive(false);
+                    ONE_EMAIL_SCREEN.SetActive(false);
+                    PROCESS_SCREEN.SetActive(false);
+                    DAY_BEGIN_SCREEN.SetActive(true);
+                }
                 break;
             default:
                 Debug.Log("Invalid game state!");

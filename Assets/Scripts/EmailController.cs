@@ -32,12 +32,24 @@ public class EmailController : MonoBehaviour {
     //The subject line for this email
     public string SUBJECT;
 
-    //The body of text for this email
-    public string BODY;
+    //The body image if it has images and a weird layout
+    public Sprite BODY_IMG;
+
+    //The body string if it is just words
+    public string BODY_TEXT;
 
     //The sender for this email
     public string SENDER;
 
     //Key for this email
     public int KEY;
+
+    //Whether or not this email influences your relationship with a key figure
+    public bool STORY_IMPORTANT = false;
+
+    //Whether or not marking this email as important will boost its happiness
+    public bool EMAIL_IMPORTANT = false;
+
+    //What type of relationship should be set if accepted or rejected
+    public bool ACCEPTED_EMAIL = true, REJECTED_EMAIL = false;
 }

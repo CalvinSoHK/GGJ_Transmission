@@ -51,12 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TYPE: 2
-  VALUE: 0
+  TYPE: 3
+  VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 6:00 AM 12/30/2018
   SUBJECT: Naruto Show Viewing
-  BODY: Please come
+  BODY_IMG: {fileID: 0}
+  BODY_TEXT: Please come. NEWLINEHuge problems.NEWLINE Need more viewers.
   SENDER: Aleksei Waddington
   KEY: 0
