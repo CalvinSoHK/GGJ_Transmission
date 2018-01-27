@@ -5,10 +5,6 @@ using UnityEngine;
 //Controls emails
 public class EmailController : MonoBehaviour {
 
-    //Possible actions taken by the player
-    public enum PlayerAction { Ignored, Accepted, Declined };
-    public PlayerAction ACTION = PlayerAction.Ignored;
-
     //Possible type of email
     //Rules for happiness for the below
     //Good A: + R: -
@@ -29,4 +25,19 @@ public class EmailController : MonoBehaviour {
 
     //The email to show up if it is rejected
     public EmailController REJECTED_NEXT;
+
+    //The date and time this email was sent
+    public string DATE;
+
+    //The subject line for this email
+    public string SUBJECT;
+
+    //The body of text for this email
+    public string BODY;
+
+    //The sender for this email
+    public string SENDER;
+
+    //Key for this email
+    public int KEY;
 }
