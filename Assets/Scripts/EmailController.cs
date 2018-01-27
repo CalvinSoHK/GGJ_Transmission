@@ -33,7 +33,7 @@ public class EmailController : MonoBehaviour {
     public string SUBJECT;
 
     //The body of text for this email
-    public string BODY;
+    public Sprite BODY;
 
     //The sender for this email
     public string SENDER;

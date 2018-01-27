@@ -57,6 +57,6 @@ MonoBehaviour:
   REJECTED_NEXT: {fileID: 0}
   DATE: 6:00 AM 12/30/2018
   SUBJECT: Naruto Show Viewing
-  BODY: Please come
+  BODY: {fileID: 21300000, guid: c3a3bb50573deff498ad25092cba1d77, type: 3}
   SENDER: Aleksei Waddington
   KEY: 0
