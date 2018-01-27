@@ -9,7 +9,7 @@ public class EmailManager : MonoBehaviour {
     public static EmailManager instance = null;
 
     //Possible actions taken by the player
-    public enum PlayerAction { Ignored, Accepted, Declined };
+    public enum PlayerAction { Ignored, Accepted, Declined, Important };
 
     //List of all emails
     //[HideInInspector]
@@ -35,6 +35,9 @@ public class EmailManager : MonoBehaviour {
     //The selected email
     EmailController SELECTED_EMAIL;
 
+    //The name of the player
+    public string PLAYER_NAME;
+
 	//Function to evaluate all emails
     public void EvaluateEmails()
     {
@@ -46,7 +49,7 @@ public class EmailManager : MonoBehaviour {
         foreach(PlayerAction ACTION in ACTION_LIST)
         {
             //If the email was ignored or accepted.
-            if(ACTION == PlayerAction.Ignored || ACTION == PlayerAction.Accepted)
+            if(ACTION != PlayerAction.Declined)
             {
                 //Add the accepted email to the next round.
                 if(EMAIL_LIST[index].ACCEPTED_NEXT != null)
@@ -101,14 +104,21 @@ public class EmailManager : MonoBehaviour {
                 }
                 else //If the email is accpeted or ignored
                 {
-                    HAPPINESS += EMAIL.VALUE;
+                    if (EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
+                    {
+                        HAPPINESS += 2 * EMAIL.VALUE;
+                    }
+                    else
+                    {
+                        HAPPINESS += EMAIL.VALUE;
+                    }
                 }
                 break;
             case EmailController.EmailType.GoodAd:
                 //If it was not declined, as in accepted or ignored
                 if(ACTION_LIST[index] != PlayerAction.Declined)
                 {
-                    HAPPINESS += EMAIL.VALUE;
+                    HAPPINESS += EMAIL.VALUE;                 
                 }
                 break;
             case EmailController.EmailType.Bad:
@@ -118,7 +128,14 @@ public class EmailManager : MonoBehaviour {
                 }
                 else
                 {
-                    HAPPINESS -= EMAIL.VALUE;
+                    if (!EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
+                    {
+                        HAPPINESS -= 2 * EMAIL.VALUE;
+                    }
+                    else
+                    {
+                        HAPPINESS -= EMAIL.VALUE;
+                    }
                 }
                 break;
             case EmailController.EmailType.BadAd:
@@ -167,6 +184,12 @@ public class EmailManager : MonoBehaviour {
     {
         //Sets the email to rejected
         ACTION_LIST[GetIndex(SELECTED_EMAIL)] = PlayerAction.Declined;
+    }
+
+    //Function that sets the selected emails status to Important
+    public void AcceptAndMarkImportantEmail()
+    {
+        ACTION_LIST[GetIndex(SELECTED_EMAIL)] = PlayerAction.Important;
     }
 
     //Helper function that gets the index of a given email

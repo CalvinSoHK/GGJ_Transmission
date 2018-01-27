@@ -43,4 +43,13 @@ public class EmailController : MonoBehaviour {
 
     //Key for this email
     public int KEY;
+
+    //Whether or not this email influences your relationship with a key figure
+    public bool STORY_IMPORTANT = false;
+
+    //Whether or not marking this email as important will boost its happiness
+    public bool EMAIL_IMPORTANT = false;
+
+    //What type of relationship should be set if accepted or rejected
+    public bool ACCEPTED_EMAIL = true, REJECTED_EMAIL = false;
 }

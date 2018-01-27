@@ -25,7 +25,7 @@ public class AllEmailScreenManager : MonoBehaviour {
     public float Y_POS_INIT = 0, Y_POS_DIFF = 30;
 
     //Color used for when it is accepted
-    public Color ACCEPTED, REJECTED;
+    public Color ACCEPTED, REJECTED, IMPORTANT;
 
 	//Function called when starting that inits the list, given a list of all emails we need to display
     public void InitList(List<EmailController> LIST)
@@ -83,6 +83,9 @@ public class AllEmailScreenManager : MonoBehaviour {
                         break;
                     case EmailManager.PlayerAction.Declined:
                         ENTRY.GetComponent<Image>().color = REJECTED;
+                        break;
+                    case EmailManager.PlayerAction.Important:
+                        ENTRY.GetComponent<Image>().color = IMPORTANT;
                         break;
                     default:
                         break;
