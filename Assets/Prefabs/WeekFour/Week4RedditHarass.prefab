@@ -51,18 +51,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 54
   TYPE: 1
-  STORY_LINK: 0
   VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/29/2018
-  SUBJECT: Recent rider recap.
+  SUBJECT: You have 50 comments
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Hey Lily,NEWLINENEWLINEThanks for riding with Alex Yu.NEWLINEPlease rate
-    your ride experience!NEWLINENEWLINEwww.uber.com/user/alex_yu/review/XI1SYD34NEWLINENEWLINEUber
-  SENDER: Uber
-  KEY: 54
+  BODY_TEXT: 'Hey lily_x_x,You have 50 comments in your thread. Some of the topvoted
+    ones are below.NEWLINENEWLINEcoolguy65: Girls can''t like Oak Tale. It''s a man''s
+    game.NEWLINElordjax9987: Oak Tale is NOT CUTE. It is a sophisticated game for
+    elevated beings.NEWLINEmemeking64:Seriously this is why Oak  Tale sucks now. Too
+    many girls are streaming it.NEWLINENEWLINEReddit'
+  SENDER: Reddit
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

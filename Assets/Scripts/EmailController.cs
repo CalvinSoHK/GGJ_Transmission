@@ -5,6 +5,9 @@ using UnityEngine;
 //Controls emails
 public class EmailController : MonoBehaviour {
 
+    //Key for this email
+    public int KEY;
+
     //Possible type of email
     //Rules for happiness for the below
     //Good A: + R: -
@@ -15,13 +18,9 @@ public class EmailController : MonoBehaviour {
     public enum EmailType { Good, Bad, Neutral, GoodAd, BadAd };
     public EmailType TYPE = EmailType.Neutral;
 
-    //Story link
-    public enum StoryLink { NULL, Family, Date, Boss };
-    public StoryLink STORY_LINK = StoryLink.NULL;
-
     //Possible happiness value from this email
     //For bad emails, this is considered negative that value. So set it higher for higher values.
-    [Range(0,5)]
+    [Range(0, 5)]
     public int VALUE = 0;
 
     //The email to show up if it is accepted
@@ -45,12 +44,25 @@ public class EmailController : MonoBehaviour {
     //The sender for this email
     public string SENDER;
 
-    //Key for this email
-    public int KEY;
-
     //Whether or not marking this email as important will boost its happiness
     public bool EMAIL_IMPORTANT = false;
 
     //What type of relationship should be set if accepted or rejected
     public bool ACCEPTED_EMAIL = true, REJECTED_EMAIL = false;
+
+    //Story link
+    public enum StoryLink { NULL, Family, Date, Boss };
+    public StoryLink STORY_LINK = StoryLink.NULL;
+
+    
+
+    
+
+    
+
+   
+
+    
+
+    
 }

@@ -51,11 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 11
   TYPE: 1
-  STORY_LINK: 1
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114330430931076042, guid: 826cf070bd4c02548987bbddc6b307c0,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114950100337422958, guid: 648e3c8a2c05f3e4f980d939f35c1b38,
+    type: 2}
   DATE: 01/13/2018
   SUBJECT: You Irresponsible Daughter
   BODY_IMG: {fileID: 0}
@@ -66,7 +68,7 @@ MonoBehaviour:
     before the New Year. She doesn't have that much to live so stop wasting time and
     reply to her.NEWLINENEWLINEDad
   SENDER: Father
-  KEY: 11
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 1

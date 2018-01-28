@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1552373730703258}
+  m_RootGameObject: {fileID: 1709572381476168}
   m_IsPrefabParent: 1
---- !u!1 &1552373730703258
+--- !u!1 &1709572381476168
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4820846018278386}
-  - component: {fileID: 114894260628471644}
+  - component: {fileID: 4142218354877804}
+  - component: {fileID: 114278379789568626}
   m_Layer: 0
-  m_Name: Week4PyramidScheme
+  m_Name: Week3DJob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4820846018278386
+  m_IsActive: 1
+--- !u!4 &4142218354877804
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1552373730703258}
+  m_GameObject: {fileID: 1709572381476168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 366, y: 308.175, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,32 +40,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114894260628471644
+--- !u!114 &114278379789568626
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1552373730703258}
+  m_GameObject: {fileID: 1709572381476168}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KEY: 56
+  KEY: 32
   TYPE: 1
-  VALUE: 2
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
-  DATE: 01/30/2018
-  SUBJECT: FREE MONEY
+  VALUE: 3
+  ACCEPTED_NEXT: {fileID: 114343914382689644, guid: 714877c09e5105c4bb9705913aaab1d7,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114955529779013306, guid: 45d2d72729e3ae945898f759fca7691a,
+    type: 2}
+  DATE: 01/26/2018
+  SUBJECT: Not A Problem
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: 'COME EARN FREE MONEY!NEWLINENEWLINESimply sign up, and pay for the low
-    fee of $200, and get into the get rich quick plan! Some club members are earning
-    up to $50,000 a month! Simply sign up, and enjoy the benefits!NEWLINENEWLINENote:
-    Earnings are based on an individual''s sales per week and $50,000 is not representative
-    of all club members.NEWLINENEWLINEEZMoney'
-  SENDER: opportenity@ezmoney.com
-  EMAIL_IMPORTANT: 0
+  BODY_TEXT: Dear Ms. Tsai,NEWLINENEWLINE No Problem at all. I assumed the email might
+    not have sent properly. However the job starts tomorrow. It would be best if we
+    could meet today so i could fill you in on the details. Maybe after work?NEWLINENEWLINE
+    Kind RegardsNEWLINE Joseph Bates
+  SENDER: Joseph Bates
+  EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
-  STORY_LINK: 0
+  STORY_LINK: 3

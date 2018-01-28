@@ -51,11 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 25
   TYPE: 1
-  STORY_LINK: 1
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114174804936056916, guid: 85683c47bc2afb144a5da4d1eac28f0e,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114588890440289892, guid: cc8e01b8db843cc4e90d312de5c3398a,
+    type: 2}
   DATE: 01/20/2018
   SUBJECT: This is hard on me as well.
   BODY_IMG: {fileID: 0}
@@ -64,7 +66,7 @@ MonoBehaviour:
     Mary but come on. Mom is dying for God's sake.NEWLINENEWLINECall Mom ASAP. Tell
     her you've found a boyfriend.NEWLINENEWLINEFrom,NEWLINEBarry
   SENDER: Barry Tsai
-  KEY: 25
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 1

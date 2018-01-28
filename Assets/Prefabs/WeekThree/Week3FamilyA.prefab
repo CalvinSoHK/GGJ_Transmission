@@ -51,17 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 23
   TYPE: 0
-  STORY_LINK: 0
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114174804936056916, guid: 85683c47bc2afb144a5da4d1eac28f0e,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114808581426328194, guid: 8b6e8c18702c213408ac10f269aefadc,
+    type: 2}
   DATE: 01/20/2018
   SUBJECT: Planning Picnic. Respond.
   BODY_IMG: {fileID: 0}
   BODY_TEXT: 
   SENDER: Barry Tsai
-  KEY: 23
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 1
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

@@ -51,21 +51,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 57
   TYPE: 3
-  STORY_LINK: 0
   VALUE: 1
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 02/01/2018
   SUBJECT: Oak Tale Orchestra Show
-  BODY_IMG: {fileID: 0}
-  BODY_TEXT: 'COME EARN FREE MONEY!NEWLINENEWLINESimply sign up, and pay for the low
-    fee of $200, and get into the get rich quick plan! Some club members are earning
-    up to $50,000 a month! Simply sign up, and enjoy the benefits!NEWLINENEWLINENote:
-    Earnings are based on an individual''s sales per week and $50,000 is not representative
-    of all club members.NEWLINENEWLINEEZMoney'
-  SENDER: opportenity@ezmoney.com
-  KEY: 56
+  BODY_IMG: {fileID: 21300000, guid: 88b5b8fe876866f44b7e096b5f028005, type: 3}
+  BODY_TEXT: 
+  SENDER: Ticketmaster
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

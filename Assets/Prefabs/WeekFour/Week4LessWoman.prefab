@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 59
   TYPE: 4
-  STORY_LINK: 0
   VALUE: 1
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
     time only, get the Eastern dragon skin and classic Chinese costumes!NEWLINENEWLINEAll
     products sold in lootboxes with varying degrees of chance.NEWLINENEWLINEActivision'
   SENDER: Activision
-  KEY: 58
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0
