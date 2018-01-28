@@ -43,21 +43,21 @@ public class EndScreenManager : MonoBehaviour {
         //Handle Date story
         if (EM.STORY_ENDING[1])
         {
-            RET_STRING += "Mike was... quite a character. He was a bit creepy... but I'm glad that ordeal is over. Won't ever have to talk to him again.\n";
+            RET_STRING += "Turns out, it's hard to really know a person in the beginning. Mike ended up being really creppy, messaging me all the time and trying to go on dates. His rude and inconsiderate behaviour was unacceptable and I am glad to have cut him out of my life.";
         }
         else
         {
-            RET_STRING += "Mike just kept on messaging me the entire month. He's been saying the most offensive, insensitive drivel I've heard in years. Hopefully he'll lose interest after a while...\n";
+            RET_STRING += "Mike just wouldn't stop messaging me this whole month. He's been saying the most offensive, insensitive drivel I've heard in years; he's almost just as bad as my boss. I sould have stopped messaging him earlier on. His actions have gone too far. Hopefully he'll lose interest after a while...\n";
         }
 
         //Handle Job story
         if(EM.STORY_ENDING[2])
         {
-            RET_STRING += "My boss was just... too much. He pushed himself onto me despite all my refusal, and while I got away it seems he got me fired at work. There really wasn't anyway it was going to end well. At least I might find a job with a better boss!\n";
+            RET_STRING += "My boss was just... too much. He pushed himself onto me despite all my refusal, and while I finally managed to push him away it seems he got me fired at work. There really wasn't anyway it was going to end well. At least I might find a job with a better boss!\n";
         }
         else
         {
-            RET_STRING += "I hate my life. My boss is just pushing me around and doing whatever he wants around me. HR won't help, and no one believes me. But if I leave, he said things could get much worse...\n";
+            RET_STRING += "What am I going to do? My boss is just pushing me around and doing whatever he wants around me. HR won't help, and no one believes me. But if I leave, he said things could get much worse...\n";
         }
 
         //Handle happiness
