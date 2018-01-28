@@ -58,7 +58,7 @@ MonoBehaviour:
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/09/2018
   SUBJECT: Bitcoin - Limited Time Opportunity!
-  BODY_IMG: {fileID: 0}
+  BODY_IMG: {fileID: 21300000, guid: 7a9d7db3c83068a409db2a7a2b3e2586, type: 3}
   BODY_TEXT: 
   SENDER: cryptoforyou@macs.com
   KEY: 9

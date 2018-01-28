@@ -9,14 +9,14 @@ public class EndScreenManager : MonoBehaviour {
     public Text MESSAGE;
 
     //The email Manager
-    EmailManager EM;
+    public EmailManager EM;
 
     //The thresholds for different endings
-    public float BAD_ENDING_THRESHOLD = -30f, OKAY_ENDING_THRESHOLD = 10f, GOOD_ENDING_THRESHOLD = 40f;
+    public float BAD_ENDING_THRESHOLD = -30f, GOOD_ENDING_THRESHOLD = 40f;
 
     private void Start()
     {
-        EM = EmailManager.instance;
+        //EM = EmailManager.instance;
     }
 
     //End the game
@@ -66,18 +66,15 @@ public class EndScreenManager : MonoBehaviour {
         {
             RET_STRING += "This SmartScreen bot doesn't really seem to do much. Life hasn't gotten any better and I still see all the junk I normally do. It really doesn't work at all. I'm gonna remove it right now, it's almost like vaporware anyway.\n";
         }//Bad ending
-        else if(EM.HAPPINESS < OKAY_ENDING_THRESHOLD)
-        {
-            RET_STRING += "The SmartScreen did a bit of work. I noticed a bit less ads but it still seems like I get scary messages once in a while. I'll probably uninstall it when I remember to.\n";
-        }//Okay ending
         else if(EM.HAPPINESS < GOOD_ENDING_THRESHOLD)
         {
-            RET_STRING += "SmartScreen has been doing good work! My emails were mostly good, or at the very least, relevant to my life. Some bad things happened but I can't fault the filter bot for that. Some trash fell through the cracks but hopefully future upgrades will make it better!\n";
+            RET_STRING += "The SmartScreen did a bit of work. I noticed a bit less ads but it still seems like I get scary messages once in a while. I'll probably uninstall it when I remember to.\n";
         }//Good ending
         else
         {
-            RET_STRING += "This is the best software I've ever downloaded. Some unfortunate events have occured but there's no way it's the bots fault. While not everything is perfect, things seem to be looking up. SmartScreen is the best choice I've ever made.";
+            RET_STRING += "SmartScreen has been doing good work! My emails were mostly good, or at the very least, relevant to my life. Some bad things happened but I can't fault the filter bot for that. Some trash fell through the cracks but hopefully future upgrades will make it better! I love this software.\n";
         }
+
 
         return RET_STRING;
     }

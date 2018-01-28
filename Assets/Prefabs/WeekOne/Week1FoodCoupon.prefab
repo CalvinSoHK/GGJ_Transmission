@@ -57,13 +57,10 @@ MonoBehaviour:
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/07/2018
-  SUBJECT: Coupon for 25% off of Godiva's Chocolates!
-  BODY_IMG: {fileID: 0}
-  BODY_TEXT: 'Dear Lily,NEWLINENEWLINEGodiva has just launched its 2018 New Years
-    Chocolate Collection. As a Godiva VIP for the past 5 years, we''re glad to give
-    you this 25% off coupon! Just show the phone at the store!NEWLINENEWLINECoupon
-    Code: X82AX7C6AA9008NEWLINENEWLINEFromNEWLINEGodiva'
-  SENDER: Godiva
+  SUBJECT: Coupon for 25% off GrubHub
+  BODY_IMG: {fileID: 21300000, guid: 10d92063922b8c044976304749f1f00f, type: 3}
+  BODY_TEXT: 
+  SENDER: GrubHub
   KEY: 7
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
