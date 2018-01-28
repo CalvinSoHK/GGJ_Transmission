@@ -41,7 +41,8 @@ public class EmailManager : MonoBehaviour {
     //The name of the player
     public string PLAYER_NAME = "my dude";
 
-    
+    //The background manager
+    public BackgroundManager BM;
 
 	//Function to evaluate all emails
     public void EvaluateEmails()
@@ -191,7 +192,7 @@ public class EmailManager : MonoBehaviour {
                 }
                 break;
             default:
-                Debug.Log("No idea what type of email that was.");
+                //Debug.Log("No idea what type of email that was.");
                 break;
         }
     }
@@ -258,7 +259,7 @@ public class EmailManager : MonoBehaviour {
         int count = 0;
         foreach(EmailController EMAIL in EMAIL_LIST)
         {
-            Debug.Log("Count: " + count);
+            //Debug.Log("Count: " + count);
             ACTION_LIST.Add(PlayerAction.Ignored);
             count++;
         }
@@ -367,6 +368,7 @@ public class EmailManager : MonoBehaviour {
                             DAY_BEGIN_SCREEN.SetActive(false);
                             PROCESS_SCREEN.SetActive(false);
                             ONE_EMAIL_SCREEN.SetActive(false);
+                            BM.ApplyColors(BackgroundManager.BackgroundStates.Inbox);
                             ALL_EMAIL_SCREEN.SetActive(true);
                         }
 
@@ -381,6 +383,7 @@ public class EmailManager : MonoBehaviour {
                             DAY_BEGIN_SCREEN.SetActive(false);
                             PROCESS_SCREEN.SetActive(false);
                             ALL_EMAIL_SCREEN.SetActive(false);
+                            BM.ApplyColors(BackgroundManager.BackgroundStates.Email);
                             ONE_EMAIL_SCREEN.SetActive(true);
                         }
                         break;
@@ -397,6 +400,7 @@ public class EmailManager : MonoBehaviour {
                     ALL_EMAIL_SCREEN.SetActive(false);
                     ONE_EMAIL_SCREEN.SetActive(false);
                     STATUS_BAR.SetActive(false);
+                    BM.ApplyColors(BackgroundManager.BackgroundStates.Sleep);
                     PROCESS_SCREEN.SetActive(true);
                 }
                 break;
@@ -409,8 +413,8 @@ public class EmailManager : MonoBehaviour {
                         ALL_EMAIL_SCREEN.SetActive(false);
                         ONE_EMAIL_SCREEN.SetActive(false);
                         PROCESS_SCREEN.SetActive(false);
-                        DAY_BEGIN_SCREEN.SetActive(true);
-
+                        BM.ApplyColors(BackgroundManager.BackgroundStates.Message);
+                        DAY_BEGIN_SCREEN.SetActive(true);          
                         DAY_BEGIN_SCREEN.GetComponent<DayBeginScreenManager>().InitScreen();
                     }
                     else
@@ -420,6 +424,7 @@ public class EmailManager : MonoBehaviour {
                         ONE_EMAIL_SCREEN.SetActive(false);
                         PROCESS_SCREEN.SetActive(false);
                         DAY_BEGIN_SCREEN.SetActive(false);
+                        BM.ApplyColors(BackgroundManager.BackgroundStates.End);
                         END_SCREEN.SetActive(true);
 
                         END_SCREEN.GetComponent<EndScreenManager>().EndGame();

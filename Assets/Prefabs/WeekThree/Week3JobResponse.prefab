@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1633193087582048}
+  m_RootGameObject: {fileID: 1876563865096564}
   m_IsPrefabParent: 1
---- !u!1 &1633193087582048
+--- !u!1 &1876563865096564
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4563810792801682}
-  - component: {fileID: 114779062488489408}
+  - component: {fileID: 4913610270355404}
+  - component: {fileID: 114423213490005794}
   m_Layer: 0
-  m_Name: Week2FamilyB
+  m_Name: Week3JobResponse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4563810792801682
+--- !u!4 &4913610270355404
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633193087582048}
+  m_GameObject: {fileID: 1876563865096564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 366, y: 308.175, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,35 +40,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114779062488489408
+--- !u!114 &114423213490005794
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633193087582048}
+  m_GameObject: {fileID: 1876563865096564}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KEY: 11
-  TYPE: 1
-  VALUE: 3
-  ACCEPTED_NEXT: {fileID: 114330430931076042, guid: 826cf070bd4c02548987bbddc6b307c0,
-    type: 2}
-  REJECTED_NEXT: {fileID: 114950100337422958, guid: 648e3c8a2c05f3e4f980d939f35c1b38,
-    type: 2}
-  DATE: 01/13/2018
-  SUBJECT: You Irresponsible Daughter
+  TYPE: 0
+  STORY_LINK: 0
+  VALUE: 2
+  ACCEPTED_NEXT: {fileID: 0}
+  REJECTED_NEXT: {fileID: 0}
+  DATE: 01/25/2018
+  SUBJECT: Interview for next quarter.
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Lily,NEWLINENEWLINEAre you serious? Why haven't you responded to Mom
-    yet. How many more months before you get over yourself and come back to this family?
-    Mom didn't want me to be the one to tell you this, but you Lily are an incredibly
-    irresponsible daughter. Your mother discovered she has stage 4 breast cancer just
-    before the New Year. She doesn't have that much to live so stop wasting time and
-    reply to her.NEWLINENEWLINEDad
-  SENDER: Father
-  EMAIL_IMPORTANT: 0
+  BODY_TEXT: Dear Lily,NEWLINENEWLINEA friend recommended you for a posting and we
+    were intrigued by your portfolio and job experience. You seem to have a knack
+    for problem solving we need for our next big game. We're super excited at the
+    prospect of working with you.NEWLINENEWLINEUnfortunately, you will be competing
+    with two other applicants. Please respond to reserve an interview appointment.NEWLINENEWLINEFrom,NEWLINEMayNEWLINENEWLINERealLifeRPGMakers
+  SENDER: may@realliferpgmakers.com
+  KEY: 36
+  EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
-  STORY_LINK: 1

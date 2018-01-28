@@ -95,7 +95,10 @@ public class TypingManager : MonoBehaviour {
             case TypingState.Reset: //Once dialogue is no longer displayed and needs to be reset
                 currentLetterIndex = 0; //set letter index to 0
                 currentLine = ""; //reset the current line being displayed
-                UI_Text.text = "";
+                if(UI_Text != null)
+                {
+                    UI_Text.text = "";
+                }             
                 setCurrentState(TypingState.Idle);
                 break;
 

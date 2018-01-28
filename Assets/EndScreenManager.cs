@@ -33,11 +33,11 @@ public class EndScreenManager : MonoBehaviour {
         //Handle Family story
         if (EM.STORY_ENDING[0]) //Good ending
         {
-            RET_STRING += "Losing Mom was... a bit much for me. But I'm glad I got to talk to her before she left. My relationship with my brother has also gotten better. We'll be heading out to E3 together next month!\n";
+            RET_STRING += "Mom was always the happiest person in the family. She might not have agreed with every way I lived my life, but she always loved me... I see that now. She always wanted me to be a mother... Maybe I'll adopt.\n";
         }
         else //Bad ending
         {
-            RET_STRING += "Mom's death was a huge surprise. I wasn't even able to meet her before she left. I regret yelling at her before I left... Those were the last words I ever said to her...\n";
+            RET_STRING += "Mom was the one to ruin our relationship. She said so meany despicable things about Mary, and while I'm not with Mary anymore, it's crazy how backwards she was. I'm a bit sad she's gone, but it's not like she was a big part of my life anyways... I miss her...\n";
         }
 
         //Handle Date story
