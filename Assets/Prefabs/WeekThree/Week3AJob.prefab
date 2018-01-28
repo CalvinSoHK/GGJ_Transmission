@@ -54,8 +54,10 @@ MonoBehaviour:
   KEY: 29
   TYPE: 1
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114501119009741996, guid: 95b4968658b47aa4ba115324a89c1364,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114501119009741996, guid: 95b4968658b47aa4ba115324a89c1364,
+    type: 2}
   DATE: 01/25/2018
   SUBJECT: Don't even think about it
   BODY_IMG: {fileID: 0}

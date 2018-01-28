@@ -54,8 +54,10 @@ MonoBehaviour:
   KEY: 2
   TYPE: 0
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114883991530578858, guid: be57ab9bbb419094dad266f4cacaebbc,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114230176669094044, guid: 4133dbac438c33946afda66f30cd0fc2,
+    type: 2}
   DATE: 01/12/2018
   SUBJECT: Extra Hours
   BODY_IMG: {fileID: 0}

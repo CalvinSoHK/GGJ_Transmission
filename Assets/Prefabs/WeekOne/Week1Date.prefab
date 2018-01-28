@@ -51,11 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 1
   TYPE: 0
-  STORY_LINK: 2
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114994622256266722, guid: 51aada5bd88ac44488d0566ec40bfd9e,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114624240625646594, guid: 621d388f0d5e40a4484fa2c654eddf51,
+    type: 2}
   DATE: 01/11/2018
   SUBJECT: Hey :)
   BODY_IMG: {fileID: 0}
@@ -64,7 +66,7 @@ MonoBehaviour:
     it with you as really fun :) NEWLINEI know you suggested we go out for dinner
     tomorrow. I hope we are still on for that! Let me know either way.NEWLINENEWLINEMike
   SENDER: mfleming@gmail.com
-  KEY: 1
   EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 2

@@ -54,8 +54,10 @@ MonoBehaviour:
   KEY: 30
   TYPE: 1
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114301342172455060, guid: 6b48ac5d48b7ae44799c67fce709c788,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114301342172455060, guid: 6b48ac5d48b7ae44799c67fce709c788,
+    type: 2}
   DATE: 01/26/217
   SUBJECT: Position In Review
   BODY_IMG: {fileID: 0}

@@ -54,8 +54,10 @@ MonoBehaviour:
   KEY: 28
   TYPE: 1
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114678046034013560, guid: 9c1e7183e22be994f8869eed1c91cafb,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114406855594991608, guid: 99f5aee14fa564d478a6b8a9639b5c2d,
+    type: 2}
   DATE: 01/22/2018
   SUBJECT: '**** you'
   BODY_IMG: {fileID: 0}

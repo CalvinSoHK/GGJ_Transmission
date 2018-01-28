@@ -54,8 +54,10 @@ MonoBehaviour:
   KEY: 13
   TYPE: 2
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 0}
-  REJECTED_NEXT: {fileID: 0}
+  ACCEPTED_NEXT: {fileID: 114048128588172996, guid: 9cf57c0ae90d33741813254491786263,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114795032163298012, guid: dac79c894b3410e42a38e704e472cc8b,
+    type: 2}
   DATE: 01/16/2018
   SUBJECT: Hey...
   BODY_IMG: {fileID: 0}
