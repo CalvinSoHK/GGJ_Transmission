@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1532367860120166}
+  m_IsPrefabParent: 1
+--- !u!1 &1532367860120166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4100894474231224}
+  - component: {fileID: 114185957151369736}
+  m_Layer: 0
+  m_Name: Week1Job
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4100894474231224
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532367860120166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 366, y: 308.175, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114185957151369736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532367860120166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KEY: 2
+  TYPE: 0
+  VALUE: 3
+  ACCEPTED_NEXT: {fileID: 114883991530578858, guid: be57ab9bbb419094dad266f4cacaebbc,
+    type: 2}
+  REJECTED_NEXT: {fileID: 114230176669094044, guid: 4133dbac438c33946afda66f30cd0fc2,
+    type: 2}
+  DATE: 01/12/2018
+  SUBJECT: Extra Hours
+  BODY_IMG: {fileID: 0}
+  BODY_TEXT: Dear Ms. Tsai,NEWLINENEWLINEFollowing your request to have some more
+    hours of work per week I am pleased to let you know that we can add extra 5 hours
+    on saturday and sunday from 01:00pm to 06:00pm. Having hired a dozen new junior
+    engineers, you will have to help them learn the tools of the trade. NEWLINENEWLINEI
+    will provide more specific guidelines after you accept the extra hours. Obviously,
+    since these hours are during the weekend you will be paid the overtime rates of
+    $30/hour.NEWLINENEWLINEPlease let me know if you are still interested in the extra
+    hours. NEWLINENEWLINEKind Regards,NEWLINEJoseph Bates
+  SENDER: Joseph Bates
+  EMAIL_IMPORTANT: 1
+  ACCEPTED_EMAIL: 0
+  REJECTED_EMAIL: 0
+  STORY_LINK: 3
