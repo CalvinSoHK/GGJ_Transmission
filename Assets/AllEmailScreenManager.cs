@@ -15,6 +15,9 @@ public class AllEmailScreenManager : MonoBehaviour {
     //Header of the given email column. Uses as reference for position
     public GameObject HEADER;
 
+    //The scrollbar we need to control
+    public Scrollbar BAR;
+
     //Content panel to add our entries into
     public GameObject CONTENT;
 
@@ -30,11 +33,13 @@ public class AllEmailScreenManager : MonoBehaviour {
 	//Function called when starting that inits the list, given a list of all emails we need to display
     public void InitList(List<EmailController> LIST)
     {
+        //Reset the scroll bar
+        //CONTENT.GetComponent<RectTransform>().position = Vector3.zero;
 
         //Populate the list
         //Save position outside so they spawn in the right place everytime
         Y_POS_DIFF = -Screen.height / 14f;
-        Vector3 POS = HEADER.transform.position + new Vector3(0, Y_POS_DIFF, 0);
+        Vector3 POS = HEADER.transform.GetComponent<RectTransform>().position + new Vector3(0, Y_POS_DIFF, 0);
         foreach(EmailController EMAIL in LIST)
         {
             //Instantiate a new entry

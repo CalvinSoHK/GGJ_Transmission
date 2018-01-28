@@ -58,7 +58,7 @@ MonoBehaviour:
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/16/2018
   SUBJECT: GranolaGuy is live on Twitch
-  BODY_IMG: {fileID: 0}
+  BODY_IMG: {fileID: 21300000, guid: eb30b10f1d75f22499d7f6b37797b3c6, type: 3}
   BODY_TEXT: 
   SENDER: Twitch
   KEY: 20

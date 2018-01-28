@@ -65,6 +65,7 @@ public class TypingManager : MonoBehaviour {
                     {
                         currentLine += WeeklyHappinessMessages[WEEK + 2];
                     }
+                    currentLine = currentLine.Replace("NAME", NAME.GetPlayerName());
                 }
                 else
                 {

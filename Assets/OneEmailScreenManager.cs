@@ -16,9 +16,7 @@ public class OneEmailScreenManager : MonoBehaviour {
     public Image BODY_IMAGE;
 
     //The string values we put in those text boxes
-    public string SENDER, SUBJECT, DATE;
-
-    
+    public string SENDER, SUBJECT, DATE;   
 
     void Update()
     {
@@ -36,9 +34,12 @@ public class OneEmailScreenManager : MonoBehaviour {
         if(EMAIL.BODY_IMG != null)
         {
             BODY_IMAGE.sprite = EMAIL.BODY_IMG;
+            BODY_IMAGE.preserveAspect = true;
+            BODY_TEXT.text = "";
         }
         else
         {
+            BODY_IMAGE.sprite = null;
             string TEMP = EMAIL.BODY_TEXT;
             TEMP = TEMP.Replace("NEWLINE", "\n");
             BODY_TEXT.text = TEMP;

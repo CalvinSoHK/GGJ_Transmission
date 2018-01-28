@@ -58,7 +58,7 @@ MonoBehaviour:
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/08/2018
   SUBJECT: An Order on Amazon waiting to be completed!
-  BODY_IMG: {fileID: 0}
+  BODY_IMG: {fileID: 21300000, guid: 31bdc7f2d1627134d9491d5eff49b4c8, type: 3}
   BODY_TEXT: 
   SENDER: Amazon
   KEY: 3

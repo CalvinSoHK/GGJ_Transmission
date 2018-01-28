@@ -58,7 +58,7 @@ MonoBehaviour:
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/07/2018
   SUBJECT: Oak Tale Re-Launch, 02/01/2018!
-  BODY_IMG: {fileID: 0}
+  BODY_IMG: {fileID: 21300000, guid: 68a99ac6ebd1f16479b33af2804b0ef0, type: 3}
   BODY_TEXT: 
   SENDER: OakTale News
   KEY: 6
