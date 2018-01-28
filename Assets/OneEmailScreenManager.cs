@@ -23,9 +23,9 @@ public class OneEmailScreenManager : MonoBehaviour {
     void Update()
     {
         //Apply all our strings to the email box
-        SENDER_TEXT.text = SENDER;
-        SUBJECT_TEXT.text = SUBJECT;
-        DATE_TEXT.text = DATE;
+        SENDER_TEXT.text = " Sender: " + SENDER;
+        SUBJECT_TEXT.text = " Subject: " + SUBJECT;
+        DATE_TEXT.text = " Date: " + DATE;
     }
 
     //Setter function for the email
