@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1261218510854928}
+  m_IsPrefabParent: 1
+--- !u!1 &1261218510854928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4591690122766162}
+  - component: {fileID: 114881506022958940}
+  m_Layer: 0
+  m_Name: Week1BitCoin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4591690122766162
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261218510854928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 366, y: 308.175, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114881506022958940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261218510854928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TYPE: 4
+  STORY_LINK: 0
+  VALUE: 1
+  ACCEPTED_NEXT: {fileID: 0}
+  REJECTED_NEXT: {fileID: 0}
+  DATE: 01/09/2018
+  SUBJECT: Bitcoin - Limited Time Opportunity!
+  BODY_IMG: {fileID: 0}
+  BODY_TEXT: 
+  SENDER: cryptoforyou@macs.com
+  KEY: 9
+  EMAIL_IMPORTANT: 0
+  ACCEPTED_EMAIL: 0
+  REJECTED_EMAIL: 0

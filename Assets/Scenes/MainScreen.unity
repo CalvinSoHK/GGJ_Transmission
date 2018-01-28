@@ -1281,7 +1281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00018310547, y: 51}
+  m_AnchoredPosition: {x: 0.00018310547, y: 54}
   m_SizeDelta: {x: 1754, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468173602
@@ -2452,8 +2452,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -671, y: 0.000030517578}
-  m_SizeDelta: {x: 392.5, y: 30}
+  m_AnchoredPosition: {x: -15.5, y: 0.000030517578}
+  m_SizeDelta: {x: 1703.4, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &741350972
 GameObject:
@@ -2503,7 +2503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MESSAGE: {fileID: 1871622849}
-  EM: {fileID: 2020007924}
   BAD_ENDING_THRESHOLD: -30
   OKAY_ENDING_THRESHOLD: 10
   GOOD_ENDING_THRESHOLD: 40
@@ -5147,6 +5146,52 @@ MonoBehaviour:
   SENDER: 
   SUBJECT: 
   DATE: 
+--- !u!1001 &1779523408
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 366
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 308.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393333106061478, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153019968640686, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f4d4d6b87f7f2c14282d361af8bbeaf1, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1813967799
 GameObject:
   m_ObjectHideFlags: 0
@@ -6316,10 +6361,22 @@ MonoBehaviour:
   EMAIL_LIST: []
   ACTION_LIST: 
   WEEK_ONE_LIST:
-  - {fileID: 114549568644534136, guid: b2cf910d0d4a4004f953ca2f808be846, type: 2}
-  - {fileID: 114549568644534136, guid: b2cf910d0d4a4004f953ca2f808be846, type: 2}
+  - {fileID: 114414776924387324, guid: 3ea45344271120343921a17cef463e7c, type: 2}
+  - {fileID: 114881506022958940, guid: b496407bfd3197844bef35e57041a69c, type: 2}
+  - {fileID: 114183818060376748, guid: 0c2bff34a8f0c0c4f96ac09448dba7fe, type: 2}
+  - {fileID: 114342098708775934, guid: 89099ada528cffd4d9b37caeeea08c3d, type: 2}
+  - {fileID: 114879590715978434, guid: c566d4af6edd53942a1de26baa97402c, type: 2}
+  - {fileID: 114561200034596610, guid: ef2d809db8a36e143a05fb93051c01b3, type: 2}
+  - {fileID: 114875016957103906, guid: 3bc33013c1af61d438f10dd2d1cd581c, type: 2}
+  - {fileID: 114874904779584276, guid: af4c7467822b0b546815e4040c292e7d, type: 2}
   WEEK_TWO_LIST:
-  - {fileID: 114549568644534136, guid: b2cf910d0d4a4004f953ca2f808be846, type: 2}
+  - {fileID: 114551770892158282, guid: 04cbe1acf7c17f946806d8118d2d987e, type: 2}
+  - {fileID: 114701949288962082, guid: 6038e7ae60661c545a3d84a35153235e, type: 2}
+  - {fileID: 114048324798269936, guid: 13315b48533d0b24fa2cf31777828183, type: 2}
+  - {fileID: 114470265048405286, guid: c07cfaec3bc82f744b1d309de102612d, type: 2}
+  - {fileID: 114539200048042138, guid: ed971eae4783bbe44a0f434b8bc2cf73, type: 2}
+  - {fileID: 114162808223717750, guid: 0bbb6a0906a69d644bc4dbcf95980201, type: 2}
+  - {fileID: 114124495209402186, guid: e9ad48680ca39a34991e381e723c5729, type: 2}
   WEEK_THREE_LIST: []
   WEEK_FOUR_LIST: []
   WEEK: 0
@@ -6379,8 +6436,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00024414062, y: 6}
-  m_SizeDelta: {x: 1754, y: 40}
+  m_AnchoredPosition: {x: 0.00024414062, y: 6.49992}
+  m_SizeDelta: {x: 1754, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028539678
 MonoBehaviour:

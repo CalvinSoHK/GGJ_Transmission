@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1633193087582048}
+  m_IsPrefabParent: 1
+--- !u!1 &1633193087582048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4563810792801682}
+  - component: {fileID: 114779062488489408}
+  m_Layer: 0
+  m_Name: Week2FamilyB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4563810792801682
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633193087582048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 366, y: 308.175, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114779062488489408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1633193087582048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TYPE: 1
+  STORY_LINK: 1
+  VALUE: 3
+  ACCEPTED_NEXT: {fileID: 0}
+  REJECTED_NEXT: {fileID: 0}
+  DATE: 01/13/2018
+  SUBJECT: You Irresponsible Daughter
+  BODY_IMG: {fileID: 0}
+  BODY_TEXT: Lily,NEWLINENEWLINEAre you serious? Why haven't you responded to Mom
+    yet. How many more months before you get over yourself and come back to this family?
+    Mom didn't want me to be the one to tell you this, but you Lily are an incredibly
+    irresponsible daughter. Your mother discovered she has stage 4 breast cancer just
+    before the New Year. She doesn't have that much to live so stop wasting time and
+    reply to her.NEWLINENEWLINEDad
+  SENDER: Father
+  KEY: 11
+  EMAIL_IMPORTANT: 0
+  ACCEPTED_EMAIL: 0
+  REJECTED_EMAIL: 0
