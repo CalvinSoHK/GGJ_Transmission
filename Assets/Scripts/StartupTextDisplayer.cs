@@ -22,7 +22,7 @@ public class StartupTextDisplayer : MonoBehaviour {
 
     public string AIDE_Name = "";
 
-    float timeOnStateChange = 0.0f, waitTime = 0.05f;
+    float timeOnStateChange = 0.0f, waitTime = 0.01f;
 
     public GameObject UI_1, UI_2, UI_3;
 
@@ -53,7 +53,7 @@ public class StartupTextDisplayer : MonoBehaviour {
                 {
                     if (currentStop < stopIndex.Length && currentLetterIndex == stopIndex[currentStop])
                     {
-                        waitTime = 0.05f;
+                        waitTime = 0.01f;
                         currentStop += 1;
                         setCurrentState(TypingState.Stop);
                         break;
@@ -65,12 +65,12 @@ public class StartupTextDisplayer : MonoBehaviour {
                     }
                     UI_Text.text += currentLine[currentLetterIndex];
                     currentLetterIndex += 1;
-                    waitTime += 0.05f;
+                    waitTime += 0.01f;
                 }
 
                 if(currentLetterIndex == currentLine.Length - 1)
                 {
-                    waitTime = 0.05f;
+                    waitTime = 0.01f;
                     UI_Text.text += "\n";
                     setCurrentState(TypingState.PlayerTyping);
                 }
@@ -132,7 +132,7 @@ public class StartupTextDisplayer : MonoBehaviour {
                 }
                 if(Input.GetKeyDown(KeyCode.Return) && currentLength > 0)
                 {
-
+                    NAME.SetPlayerName(AIDE_Name);
                     SceneManager.LoadScene(1);
                 }
                 break;

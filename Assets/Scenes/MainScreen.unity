@@ -1663,6 +1663,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1477331537}
+        m_MethodName: resetTyping
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &586645099
@@ -4120,12 +4131,34 @@ MonoBehaviour:
   currentLine: 
   currentWeekLine: 
   currentLetterIndex: 0
-  stopIndex: 0
-  deleteIndex: 0
+  stopIndex: -1
+  deleteIndex: -1
   currentDeleteCount: 0
-  UI_Text: {fileID: 0}
-  WeeklyHappinessMessages: []
-  WeeklyMessages: []
+  UI_Text: {fileID: 1813967801}
+  WeeklyHappinessMessages:
+  - 
+  - ' Also, I''m not doing too well. Please make sure you let the right emails through.
+    I would hate to miss someone''s transmission...'
+  - ' Everything is good with me though :) THanks for doing your best'
+  - ' Ok, that''s it for now. Keep up the status quo I guess...'
+  - ' Anywho, things are hitting the fan pretty hard. Please make sure I have access
+    to all the right emails'
+  - ' All that is not going to rain on my parade though! Keep it up :)'
+  - ' Dang... One more week gone. Let''s just keep it going then.'
+  - ' Gosh this is tough. I don''t know if i can keep it going...'
+  - ' Don''t worry about me too much though. I''ve dealt It''s funny these guys think
+    they can affect me. I''m doing fine without them. Let''s just focus on the fam.'
+  - ' Well, here we are again. Let''sget through this week one day at a time.'
+  WeeklyMessages:
+  - THIS SHOULD NOT GET ACCESSED
+  - Ok this week, if you see a Message from Mike make sure to send that my way! Everything
+    else should just be the same.
+  - What's up with all these guys. I want to see if i get anything from my Boss. NAME
+    I need some distraction. Send up whatever looks fun.
+  - What the hell? What is going on with these lads. Any news from mom? This month
+    has been rough NAME. If you have anything I might like, let me see it.
+  BadThreshold: ffffffff0800000000000000f8fffffff0ffffff
+  GoodThreshold: ffffffff0f000000170000001f00000027000000
 --- !u!1 &1515603771
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,11 +5280,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 72
+    m_Font: {fileID: 12800000, guid: 1999c3b38012d8c489dd224725a5294f, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
+    m_MinSize: 6
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5259,7 +5292,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hey can you delete all the memes thanks.
+  m_Text: 
 --- !u!222 &1813967802
 CanvasRenderer:
   m_ObjectHideFlags: 0

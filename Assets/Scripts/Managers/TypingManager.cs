@@ -18,20 +18,23 @@ public class TypingManager : MonoBehaviour {
 
     
 
-    float timeOnStateChange = 0.0f, waitTime = 0.1f;
+    float timeOnStateChange = 0.0f, waitTime = 0.03f;
 
     public List<string> WeeklyHappinessMessages = new List<string>();
     public List<string> WeeklyMessages = new List<string>();
+    public List<int> BadThreshold = new List<int>();
+    public List<int> GoodThreshold = new List<int>();
 
     float happinessThreshold = 50f;
 
     // Use this for initialization
     void Start () {
-        setCurrentState(TypingState.Typing);
+        setCurrentState(TypingState.Setup);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        
         switch (currentTypingState)
         {
             case TypingState.Idle: //if it needs to be idle
@@ -42,19 +45,34 @@ public class TypingManager : MonoBehaviour {
                 //call whatever function that will give us the right line to be displayed
                 //call to get the stop index
                 //call to get the delete index
+                
                 float HAPPINESS = EmailManager.instance.HAPPINESS;
                 int WEEK = EmailManager.instance.WEEK;
-
-                currentWeekLine = WeeklyMessages[WEEK];
-                if(HAPPINESS < happinessThreshold )
+                
+                if (WEEK != 0)
                 {
-                    currentWeekLine = WeeklyHappinessMessages[WEEK];
+
+                    currentLine = WeeklyMessages[WEEK];
+                    if (HAPPINESS <= BadThreshold[WEEK])
+                    {
+                        currentLine += WeeklyHappinessMessages[WEEK];
+                    }
+                    else if (HAPPINESS >= GoodThreshold[WEEK])
+                    {
+                        currentLine += WeeklyHappinessMessages[WEEK + 1];
+                    }
+                    else
+                    {
+                        currentLine += WeeklyHappinessMessages[WEEK + 2];
+                    }
                 }
                 else
                 {
-                    currentWeekLine = WeeklyHappinessMessages[WEEK+1];
+                    currentLine = "Hey there NAME. Let's get to work ok? I need you to make sure I receive emails from work and my family. If you think some are important, tag them as such. Anything you think is not relevant to me, you can just delete. \n Oky Thanks :)";
+                    currentLine = currentLine.Replace("NAME", NAME.GetPlayerName());
                 }
 
+                waitTime = 0.03f;
                 setCurrentState(TypingState.Typing); //move on to typing
                 break;
 
@@ -63,11 +81,11 @@ public class TypingManager : MonoBehaviour {
                 {
                     UI_Text.text += currentLine[currentLetterIndex];
                     currentLetterIndex += 1;
-                    waitTime += 0.1f;
+                    waitTime += 0.03f;
                 }
                 else if(stopIndex != -1 && currentLetterIndex == stopIndex)
                 {
-                    waitTime = 0.1f;
+                    waitTime = 0.03f;
                     setCurrentState(TypingState.Stop);
                 }
                 
@@ -76,6 +94,7 @@ public class TypingManager : MonoBehaviour {
             case TypingState.Reset: //Once dialogue is no longer displayed and needs to be reset
                 currentLetterIndex = 0; //set letter index to 0
                 currentLine = ""; //reset the current line being displayed
+                UI_Text.text = "";
                 setCurrentState(TypingState.Idle);
                 break;
 
@@ -120,5 +139,15 @@ public class TypingManager : MonoBehaviour {
     public float getStateElapsed()
     {
         return Time.time - timeOnStateChange;
+    }
+
+    public void resetTyping()
+    {
+        setCurrentState(TypingState.Reset);
+    }
+
+    public void Init()
+    {
+        setCurrentState(TypingState.Setup);
     }
 }
