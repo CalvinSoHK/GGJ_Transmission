@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TYPE: 3
+  STORY_LINK: 0
   VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
@@ -61,3 +62,6 @@ MonoBehaviour:
   BODY_TEXT: Please come. NEWLINEHuge problems.NEWLINE Need more viewers.
   SENDER: Aleksei Waddington
   KEY: 0
+  EMAIL_IMPORTANT: 0
+  ACCEPTED_EMAIL: 1
+  REJECTED_EMAIL: 0

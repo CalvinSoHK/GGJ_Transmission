@@ -8,7 +8,8 @@ public class TypingManager : MonoBehaviour {
 
     public enum TypingState { Idle, Setup, Typing, Reset, Stop, Delete }; //The states that could occur for typing
     public TypingState currentTypingState;
-    public string currentLine; //current line that needs to be displayed
+    public string currentLine, //current line that needs to be displayed based on their happiness
+        currentWeekLine; //current line that needs to be displayed based on the week
     public int currentLetterIndex = 0, //current letter that needs to be displayed
         stopIndex = 0, //number of letters that can get displayed before stoping the displaying of text
         deleteIndex = 0, //number of letters that need to be deleted before resuming text display
@@ -19,8 +20,13 @@ public class TypingManager : MonoBehaviour {
 
     float timeOnStateChange = 0.0f, waitTime = 0.1f;
 
-	// Use this for initialization
-	void Start () {
+    public List<string> WeeklyHappinessMessages = new List<string>();
+    public List<string> WeeklyMessages = new List<string>();
+
+    float happinessThreshold = 50f;
+
+    // Use this for initialization
+    void Start () {
         setCurrentState(TypingState.Typing);
 	}
 	
@@ -36,6 +42,19 @@ public class TypingManager : MonoBehaviour {
                 //call whatever function that will give us the right line to be displayed
                 //call to get the stop index
                 //call to get the delete index
+                float HAPPINESS = EmailManager.instance.HAPPINESS;
+                int WEEK = EmailManager.instance.WEEK;
+
+                currentWeekLine = WeeklyMessages[WEEK];
+                if(HAPPINESS < happinessThreshold )
+                {
+                    currentWeekLine = WeeklyHappinessMessages[WEEK];
+                }
+                else
+                {
+                    currentWeekLine = WeeklyHappinessMessages[WEEK+1];
+                }
+
                 setCurrentState(TypingState.Typing); //move on to typing
                 break;
 
