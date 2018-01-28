@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StartupTextDisplayer : MonoBehaviour {
     public enum TypingState { Idle, Setup, Typing, PlayerTyping, Reset, Stop }; //The states that could occur for typing
@@ -23,10 +24,12 @@ public class StartupTextDisplayer : MonoBehaviour {
 
     float timeOnStateChange = 0.0f, waitTime = 0.05f;
 
+    public GameObject UI_1, UI_2, UI_3;
+
     // Use this for initialization
     void Start()
     {
-        setCurrentState(TypingState.Typing);
+        setCurrentState(TypingState.Idle);
     }
 
     // Update is called once per frame
@@ -129,8 +132,8 @@ public class StartupTextDisplayer : MonoBehaviour {
                 }
                 if(Input.GetKeyDown(KeyCode.Return) && currentLength > 0)
                 {
-                    
-                    setCurrentState(TypingState.Idle);
+
+                    SceneManager.LoadScene(1);
                 }
                 break;
             case TypingState.Reset: //Once dialogue is no longer displayed and needs to be reset
@@ -165,5 +168,18 @@ public class StartupTextDisplayer : MonoBehaviour {
     public float getStateElapsed()
     {
         return Time.time - timeOnStateChange;
+    }
+
+    public void setToTyping()
+    {
+        setCurrentState(TypingState.Typing);
+        DisableMenuUI();
+    }
+
+    public void DisableMenuUI()
+    {
+        UI_1.SetActive(false);
+        UI_2.SetActive(false);
+        UI_3.SetActive(false);
     }
 }
