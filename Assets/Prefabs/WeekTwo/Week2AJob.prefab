@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1486153607696012}
+  m_RootGameObject: {fileID: 1944797137089446}
   m_IsPrefabParent: 1
---- !u!1 &1486153607696012
+--- !u!1 &1944797137089446
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4260934483246128}
-  - component: {fileID: 114340674702851030}
+  - component: {fileID: 4803932939702550}
+  - component: {fileID: 114883991530578858}
   m_Layer: 0
-  m_Name: Week2FamilyA
+  m_Name: Week2AJob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4260934483246128
+--- !u!4 &4803932939702550
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1486153607696012}
+  m_GameObject: {fileID: 1944797137089446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 366, y: 308.175, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,37 +40,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114340674702851030
+--- !u!114 &114883991530578858
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1486153607696012}
+  m_GameObject: {fileID: 1944797137089446}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KEY: 10
-  TYPE: 1
+  KEY: 14
+  TYPE: 2
   VALUE: 3
-  ACCEPTED_NEXT: {fileID: 114330430931076042, guid: 826cf070bd4c02548987bbddc6b307c0,
+  ACCEPTED_NEXT: {fileID: 114015201218052854, guid: 38a2856176f6de0498b12a72ed92d6e0,
     type: 2}
-  REJECTED_NEXT: {fileID: 114436662666306046, guid: 4e2de181537e8284bbe58eb6031a6a99,
+  REJECTED_NEXT: {fileID: 114955529779013306, guid: 45d2d72729e3ae945898f759fca7691a,
     type: 2}
-  DATE: 01/13/2018
-  SUBJECT: Hospital Visit
+  DATE: 01/17/2018
+  SUBJECT: Working With You
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Dear Lily,NEWLINENEWLINEIt's a real shame that you and Mary are apart,
-    but I believe it'll be for the better. You didn't suit each other too much.NEWLINENEWLINEI'm
-    sorry for not being honest last time, but the real reason I'm emailing you is
-    I recently discovered I have stage 4 breast cancer... It was around Christmas
-    that I passed out at home. Afterwards your father rushed me to the hospital and
-    they gave us the bad news.NEWLINENEWLINEDon't be mad at your father or Barry,
-    I told them I would tell you myself. I didn't want them to take on that burden.NEWLINENEWLINEAll
-    my love,NEWLINEMom
-  SENDER: Mom
-  EMAIL_IMPORTANT: 1
+  BODY_TEXT: Hey Lily,NEWLINENEWLINEI'm so glad you decided to take on the extra hours.
+    I think this will give us the perfect oppertunity to work more closely together.
+    The job starts next weekend, but if you want to meet before hand to discuss and
+    prepare, please let me know. I'm looking forward to working with you.NEWLINENEWLINEJo
+  SENDER: jb1961@gmail.com
+  EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
-  STORY_LINK: 1
+  STORY_LINK: 3

@@ -33,31 +33,31 @@ public class EndScreenManager : MonoBehaviour {
         //Handle Family story
         if (EM.STORY_ENDING[0]) //Good ending
         {
-            RET_STRING += "Losing Mom was... a bit much for me. But I'm glad I got to talk to her before she left. My relationship with my brother has also gotten better. We'll be heading out to E3 together next month!\n";
+            RET_STRING += "Mom was always the happiest person in the family. She might not have agreed with every way I lived my life, but she always loved me... I see that now. She always wanted me to be a mother... Maybe I'll adopt.\n";
         }
         else //Bad ending
         {
-            RET_STRING += "Mom's death was a huge surprise. I wasn't even able to meet her before she left. I regret yelling at her before I left... Those were the last words I ever said to her...\n";
+            RET_STRING += "Mom was the one to ruin our relationship. She said so meany despicable things about Mary, and while I'm not with Mary anymore, it's crazy how backwards she was. I'm a bit sad she's gone, but it's not like she was a big part of my life anyways... I miss her...\n";
         }
 
         //Handle Date story
         if (EM.STORY_ENDING[1])
         {
-            RET_STRING += "Mike was... quite a character. He was a bit creepy... but I'm glad that ordeal is over. Won't ever have to talk to him again.\n";
+            RET_STRING += "Turns out, it's hard to really know a person in the beginning. Mike ended up being really creppy, messaging me all the time and trying to go on dates. His rude and inconsiderate behaviour was unacceptable and I am glad to have cut him out of my life.";
         }
         else
         {
-            RET_STRING += "Mike just kept on messaging me the entire month. He's been saying the most offensive, insensitive drivel I've heard in years. Hopefully he'll lose interest after a while...\n";
+            RET_STRING += "Mike just wouldn't stop messaging me this whole month. He's been saying the most offensive, insensitive drivel I've heard in years; he's almost just as bad as my boss. I sould have stopped messaging him earlier on. His actions have gone too far. Hopefully he'll lose interest after a while...\n";
         }
 
         //Handle Job story
         if(EM.STORY_ENDING[2])
         {
-            RET_STRING += "My boss was just... too much. He pushed himself onto me despite all my refusal, and while I got away it seems he got me fired at work. There really wasn't anyway it was going to end well. At least I might find a job with a better boss!\n";
+            RET_STRING += "My boss was just... too much. He pushed himself onto me despite all my refusal, and while I finally managed to push him away it seems he got me fired at work. There really wasn't anyway it was going to end well. At least I might find a job with a better boss!\n";
         }
         else
         {
-            RET_STRING += "I hate my life. My boss is just pushing me around and doing whatever he wants around me. HR won't help, and no one believes me. But if I leave, he said things could get much worse...\n";
+            RET_STRING += "What am I going to do? My boss is just pushing me around and doing whatever he wants around me. HR won't help, and no one believes me. But if I leave, he said things could get much worse...\n";
         }
 
         //Handle happiness
