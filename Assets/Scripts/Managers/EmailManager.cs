@@ -39,7 +39,9 @@ public class EmailManager : MonoBehaviour {
     EmailController SELECTED_EMAIL;
 
     //The name of the player
-    public string PLAYER_NAME;
+    public string PLAYER_NAME = "my dude";
+
+    
 
 	//Function to evaluate all emails
     public void EvaluateEmails()

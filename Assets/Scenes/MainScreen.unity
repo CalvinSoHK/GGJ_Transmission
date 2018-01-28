@@ -141,8 +141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -148, y: 364.1}
-  m_SizeDelta: {x: 887.4, y: 254.4}
+  m_AnchoredPosition: {x: -148, y: 244.3}
+  m_SizeDelta: {x: 887.4, y: 928.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16811635
 MonoBehaviour:
@@ -163,7 +163,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 65392a8918c908c46b8f7697a95fe399, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -332,8 +332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -671, y: 0.000030517578}
-  m_SizeDelta: {x: 392.5, y: 30}
+  m_AnchoredPosition: {x: 4.876, y: 0.000030517578}
+  m_SizeDelta: {x: 1744.3, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &214668607
 GameObject:
@@ -542,7 +542,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7eee411c811392b4189f175c851360bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -571,7 +571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -578, y: 4}
+  m_AnchoredPosition: {x: -617, y: 4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &319177229
@@ -1012,7 +1012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &413433204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1050,7 +1050,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a855d920a4ccb3f45b27ed08038b21c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1bf69ac944bfe149a4f86361169e4cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1456098829}
   m_HandleRect: {fileID: 1456098828}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1234,7 +1234,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7bef93f3a54c8c94ca74cacb275baf95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ddd73d2b9488da418be99108335ba1d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1577,7 +1577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 484.79993, y: -196}
+  m_AnchoredPosition: {x: 718, y: -320}
   m_SizeDelta: {x: 313.1, y: 91.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586645098
@@ -1655,6 +1655,17 @@ MonoBehaviour:
       - m_Target: {fileID: 2103361578}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1477331537}
+        m_MethodName: resetTyping
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1888,7 +1899,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bd2556ce1cf9b7f49badd0d046b3dd3b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bef5c59feced7b4397fc68ef0578a1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2560,7 +2571,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6eb35b80d51857a43bcb1695deadef0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 337e492f056f7ad439a2527ce5517ef7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3081,6 +3092,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2020007924}
         m_MethodName: EvaluateEmails
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1477331537}
+        m_MethodName: Init
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4066,7 +4088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1477331535
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4120,12 +4142,34 @@ MonoBehaviour:
   currentLine: 
   currentWeekLine: 
   currentLetterIndex: 0
-  stopIndex: 0
-  deleteIndex: 0
+  stopIndex: -1
+  deleteIndex: -1
   currentDeleteCount: 0
-  UI_Text: {fileID: 0}
-  WeeklyHappinessMessages: []
-  WeeklyMessages: []
+  UI_Text: {fileID: 1813967801}
+  WeeklyHappinessMessages:
+  - 
+  - ' Also, I''m not doing too well. Please make sure you let the right emails through.
+    I would hate to miss someone''s transmission...'
+  - ' Everything is good with me though :) THanks for doing your best'
+  - ' Ok, that''s it for now. Keep up the status quo I guess...'
+  - ' Anywho, things are hitting the fan pretty hard. Please make sure I have access
+    to all the right emails'
+  - ' All that is not going to rain on my parade though! Keep it up :)'
+  - ' Dang... One more week gone. Let''s just keep it going then.'
+  - ' Gosh this is tough. I don''t know if i can keep it going...'
+  - ' Don''t worry about me too much though. I''ve dealt It''s funny these guys think
+    they can affect me. I''m doing fine without them. Let''s just focus on the fam.'
+  - ' Well, here we are again. Let''sget through this week one day at a time.'
+  WeeklyMessages:
+  - THIS SHOULD NOT GET ACCESSED
+  - Ok this week, if you see a Message from Mike make sure to send that my way! Everything
+    else should just be the same.
+  - What's up with all these guys. I want to see if i get anything from my Boss. NAME
+    I need some distraction. Send up whatever looks fun.
+  - What the hell? What is going on with these lads. Any news from mom? This month
+    has been rough NAME. If you have anything I might like, let me see it.
+  BadThreshold: ffffffff0800000000000000f8fffffff0ffffff
+  GoodThreshold: ffffffff0f000000170000001f00000027000000
 --- !u!1 &1515603771
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,7 +4408,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cd0d9a1f27a75a644992d2ca8e166941, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4dd92a9eedc84174f99b67e5fa61d83d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5224,8 +5268,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.1, y: 3.2}
-  m_SizeDelta: {x: -54.6, y: -48.3}
+  m_AnchoredPosition: {x: 22.8, y: 177.9}
+  m_SizeDelta: {x: -104.4, y: -875.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813967801
 MonoBehaviour:
@@ -5247,11 +5291,11 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 72
+    m_Font: {fileID: 12800000, guid: 1999c3b38012d8c489dd224725a5294f, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
+    m_MinSize: 6
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -5259,7 +5303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hey can you delete all the memes thanks.
+  m_Text: 
 --- !u!222 &1813967802
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5532,8 +5576,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2071267950}
   m_HandleRect: {fileID: 2071267949}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0.5
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6049,7 +6093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1967240255
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6087,7 +6131,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a855d920a4ccb3f45b27ed08038b21c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1bf69ac944bfe149a4f86361169e4cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6133,8 +6177,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.8, y: 1}
-  m_SizeDelta: {x: -35.6, y: -39.3}
+  m_AnchoredPosition: {x: 12, y: 162}
+  m_SizeDelta: {x: -121.7, y: -785.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967776160
 MonoBehaviour:
@@ -6526,7 +6570,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7eee411c811392b4189f175c851360bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6604,8 +6648,8 @@ RectTransform:
   m_Father: {fileID: 1572039066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.99999994, y: 1}
+  m_AnchorMin: {x: 0.000000029802322, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6852,8 +6896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: -4.200012}
-  m_SizeDelta: {x: 957, y: 520.7}
+  m_AnchoredPosition: {x: 286.7, y: -138}
+  m_SizeDelta: {x: 1227.5, y: 1161.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103361580
 MonoBehaviour:
@@ -6874,8 +6918,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 65392a8918c908c46b8f7697a95fe399, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
