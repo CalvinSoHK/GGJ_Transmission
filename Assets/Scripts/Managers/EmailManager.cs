@@ -27,13 +27,13 @@ public class EmailManager : MonoBehaviour {
     public EmailSiteState STATE = EmailSiteState.AllEmails;
 
     //User's happiness value. Saved on the email manager.
-    public int HAPPINESS = 0;
+    public float HAPPINESS = 0;
 
     //The story ending bools
     public bool[] STORY_ENDING = new bool[3];
 
     //The two gameobjects that constitute our two different type of screens
-    public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN, PROCESS_SCREEN, STATUS_BAR;
+    public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN, PROCESS_SCREEN, STATUS_BAR, END_SCREEN;
 
     //The selected email
     EmailController SELECTED_EMAIL;
@@ -107,14 +107,20 @@ public class EmailManager : MonoBehaviour {
             default: //Not related to any stories
                 break;
         }
-        if (ACTION_LIST[GetIndex(EMAIL)] != PlayerAction.Declined)
+
+        //Index
+        if(index != -1)
         {
-            STORY_ENDING[index] = EMAIL.ACCEPTED_EMAIL;
+            if (ACTION_LIST[GetIndex(EMAIL)] != PlayerAction.Declined)
+            {
+                STORY_ENDING[index] = EMAIL.ACCEPTED_EMAIL;
+            }
+            else
+            {
+                STORY_ENDING[index] = EMAIL.REJECTED_EMAIL;
+            }
         }
-        else
-        {
-            STORY_ENDING[index] = EMAIL.REJECTED_EMAIL;
-        }
+     
     }
 
     //Helper function for evaluate that adds the right happiness value
@@ -136,7 +142,7 @@ public class EmailManager : MonoBehaviour {
                 {
                     HAPPINESS -= EMAIL.VALUE;
                 }
-                else //If the email is accpeted or ignored
+                //If the email is accpeted or ignored
                 {
                     if (EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
                     {
@@ -158,13 +164,21 @@ public class EmailManager : MonoBehaviour {
             case EmailController.EmailType.Bad:
                 if(ACTION_LIST[GetIndex(EMAIL)] != PlayerAction.Declined)
                 {
-                    if (!EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
+                    if (EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
                     {
-                        HAPPINESS -= 2 * EMAIL.VALUE;
+                        HAPPINESS -= 0;
                     }
                     else
                     {
                         HAPPINESS -= EMAIL.VALUE;
+                    }
+                }
+                else //If we declined it
+                {
+                    //If its important, take double the hit. Else take no hit
+                    if (EMAIL.EMAIL_IMPORTANT)
+                    {
+                        HAPPINESS -= 2 * EMAIL.VALUE;
                     }
                 }
                 break;
@@ -387,10 +401,28 @@ public class EmailManager : MonoBehaviour {
             case GameStateManager.GameState.Waiting:
                 if (!DAY_BEGIN_SCREEN.activeSelf)
                 {
-                    ALL_EMAIL_SCREEN.SetActive(false);
-                    ONE_EMAIL_SCREEN.SetActive(false);
-                    PROCESS_SCREEN.SetActive(false);
-                    DAY_BEGIN_SCREEN.SetActive(true);
+                    //If we just finished week 4, we should end the game, else do the default
+                    if(WEEK != 4)
+                    {
+                        ALL_EMAIL_SCREEN.SetActive(false);
+                        ONE_EMAIL_SCREEN.SetActive(false);
+                        PROCESS_SCREEN.SetActive(false);
+                        DAY_BEGIN_SCREEN.SetActive(true);
+
+                        DAY_BEGIN_SCREEN.GetComponent<DayBeginScreenManager>().InitScreen();
+                    }
+                    else
+                    {
+                        //Do the final message thing
+                        ALL_EMAIL_SCREEN.SetActive(false);
+                        ONE_EMAIL_SCREEN.SetActive(false);
+                        PROCESS_SCREEN.SetActive(false);
+                        DAY_BEGIN_SCREEN.SetActive(false);
+                        END_SCREEN.SetActive(true);
+
+                        END_SCREEN.GetComponent<EndScreenManager>().EndGame();
+                    }
+                   
                 }
                 break;
             default:

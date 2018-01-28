@@ -15,7 +15,7 @@ public class StatusController : MonoBehaviour {
     public List<string> WEEK_TWO_STATUS = new List<string>(), WEEK_THREE_STATUS = new List<string>(), WEEK_FOUR_STATUS = new List<string>();
 
 
-    public void LoadStatus(int WEEK, int HAPPINESS)
+    public void LoadStatus(int WEEK, float HAPPINESS)
     {
         switch (WEEK)
         {
