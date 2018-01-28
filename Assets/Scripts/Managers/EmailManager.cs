@@ -29,6 +29,9 @@ public class EmailManager : MonoBehaviour {
     //User's happiness value. Saved on the email manager.
     public int HAPPINESS = 0;
 
+    //The story ending bools
+    public bool[] STORY_ENDING = new bool[3];
+
     //The two gameobjects that constitute our two different type of screens
     public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN, PROCESS_SCREEN, STATUS_BAR;
 
@@ -70,6 +73,9 @@ public class EmailManager : MonoBehaviour {
             //Handle happiness for that email
             HandleHappiness(EMAIL_LIST[index]);
 
+            //Handle story consequences
+            HandleStory(EMAIL_LIST[index]);
+
             //Increment index
             index++;
         }
@@ -81,6 +87,34 @@ public class EmailManager : MonoBehaviour {
         {
             EMAIL_LIST.Add(EMAIL);
         }    
+    }
+
+    //Helper function that handles story beats
+    public void HandleStory(EmailController EMAIL)
+    {
+        int index = -1;
+        switch (EMAIL.STORY_LINK)
+        {
+            case EmailController.StoryLink.Family:
+                index = 0;
+                break;
+            case EmailController.StoryLink.Date:
+                index = 1;
+                break;
+            case EmailController.StoryLink.Boss:
+                index = 2;
+                break;
+            default: //Not related to any stories
+                break;
+        }
+        if (ACTION_LIST[GetIndex(EMAIL)] != PlayerAction.Declined)
+        {
+            STORY_ENDING[index] = EMAIL.ACCEPTED_EMAIL;
+        }
+        else
+        {
+            STORY_ENDING[index] = EMAIL.REJECTED_EMAIL;
+        }
     }
 
     //Helper function for evaluate that adds the right happiness value
@@ -122,11 +156,7 @@ public class EmailManager : MonoBehaviour {
                 }
                 break;
             case EmailController.EmailType.Bad:
-                if(ACTION_LIST[GetIndex(EMAIL)] == PlayerAction.Declined)
-                {
-                    HAPPINESS += EMAIL.VALUE;
-                }
-                else
+                if(ACTION_LIST[GetIndex(EMAIL)] != PlayerAction.Declined)
                 {
                     if (!EMAIL.EMAIL_IMPORTANT && ACTION_LIST[index] == PlayerAction.Important)
                     {

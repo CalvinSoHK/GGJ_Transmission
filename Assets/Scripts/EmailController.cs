@@ -15,6 +15,10 @@ public class EmailController : MonoBehaviour {
     public enum EmailType { Good, Bad, Neutral, GoodAd, BadAd };
     public EmailType TYPE = EmailType.Neutral;
 
+    //Story link
+    public enum StoryLink { NULL, Family, Date, Boss };
+    public StoryLink STORY_LINK = StoryLink.NULL;
+
     //Possible happiness value from this email
     //For bad emails, this is considered negative that value. So set it higher for higher values.
     [Range(0,5)]
@@ -43,9 +47,6 @@ public class EmailController : MonoBehaviour {
 
     //Key for this email
     public int KEY;
-
-    //Whether or not this email influences your relationship with a key figure
-    public bool STORY_IMPORTANT = false;
 
     //Whether or not marking this email as important will boost its happiness
     public bool EMAIL_IMPORTANT = false;
