@@ -6972,8 +6972,16 @@ MonoBehaviour:
   WEEK_ONE_STATUS: Just got SmartScreen bot! Hopefully it doesn't delete all my anime
     ads...
   WEEK_TWO_STATUS:
-  - Life isn't the best these days.
-  - I can keep going. Things might be better next week!
-  - Everything is going perfectly! Life might as well be perfect.
-  WEEK_THREE_STATUS: []
-  WEEK_FOUR_STATUS: []
+  - Going through a rough patch...but I am not going to let that get me down!
+  - I wish this day could be a little longer :)
+  - Today I tried to bebetter. I just wish everyone else did as well.
+  WEEK_THREE_STATUS:
+  - If anyone has a minute, DM me. I feel like I need someone to talk to.
+  - I didn't have to decide to be happy today :)
+  - This is good enough.
+  WEEK_FOUR_STATUS:
+  - Leave all the f_bois behind. There are more important things to focus on
+  - Thinking of you Mom. Love you.
+  - Going to bed now. Let's see what tomorrow holds for us.
+  BadThreshold: ffffffff0800000000000000f8fffffff0ffffff
+  GoodThreshold: ffffffff0f000000170000001f00000027000000
