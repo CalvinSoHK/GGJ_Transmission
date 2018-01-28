@@ -9,12 +9,17 @@ public class EndScreenManager : MonoBehaviour {
     public Text MESSAGE;
 
     //The email Manager
-    public EmailManager EM;
+    EmailManager EM;
 
     //The thresholds for different endings
     public float BAD_ENDING_THRESHOLD = -30f, OKAY_ENDING_THRESHOLD = 10f, GOOD_ENDING_THRESHOLD = 40f;
 
-	//End the game
+    private void Start()
+    {
+        EM = EmailManager.instance;
+    }
+
+    //End the game
     public void EndGame()
     {
         //Handle all three endings and the happiness
