@@ -29,7 +29,7 @@ public class EndScreenManager : MonoBehaviour {
     //Get the entire string we want to display
     public string FullEnd()
     {
-        string RET_STRING = "";
+        string RET_STRING = NAME.GetPlayerName() + "'s Evaluation:\n";
         //Handle Family story
         if (EM.STORY_ENDING[0]) //Good ending
         {
@@ -43,7 +43,7 @@ public class EndScreenManager : MonoBehaviour {
         //Handle Date story
         if (EM.STORY_ENDING[1])
         {
-            RET_STRING += "Turns out, it's hard to really know a person in the beginning. Mike ended up being really creppy, messaging me all the time and trying to go on dates. His rude and inconsiderate behaviour was unacceptable and I am glad to have cut him out of my life.";
+            RET_STRING += "Turns out, it's hard to really know a person in the beginning. Mike ended up being really creepy, messaging me all the time and trying to go on dates. His rude and inconsiderate behaviour was unacceptable and I am glad to have cut him out of my life.\n";
         }
         else
         {
@@ -64,15 +64,15 @@ public class EndScreenManager : MonoBehaviour {
         //Worst ending
         if (EM.HAPPINESS < BAD_ENDING_THRESHOLD)
         {
-            RET_STRING += "This SmartScreen bot doesn't really seem to do much. Life hasn't gotten any better and I still see all the junk I normally do. It really doesn't work at all. I'm gonna remove it right now, it's almost like vaporware anyway.\n";
+            RET_STRING += "I think this bot did more harm than good. My life has gotten so much worse. I'm not sure if I missed some important emails but the way life has been going its like a storm. \n";
         }//Bad ending
         else if(EM.HAPPINESS < GOOD_ENDING_THRESHOLD)
         {
-            RET_STRING += "The SmartScreen did a bit of work. I noticed a bit less ads but it still seems like I get scary messages once in a while. I'll probably uninstall it when I remember to.\n";
+            RET_STRING += "The AIDE System did a bit of work. I noticed a bit less ads but it still seems like I get scary messages once in a while. I'll keep this software a while longer.\n";
         }//Good ending
         else
         {
-            RET_STRING += "SmartScreen has been doing good work! My emails were mostly good, or at the very least, relevant to my life. Some bad things happened but I can't fault the filter bot for that. Some trash fell through the cracks but hopefully future upgrades will make it better! I love this software.\n";
+            RET_STRING += "AIDE System has been doing good work! My emails were mostly good, or at the very least, relevant to my life. I love this software.\n";
         }
 
 

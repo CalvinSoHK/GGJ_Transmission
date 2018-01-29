@@ -51,17 +51,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 40
   TYPE: 0
-  STORY_LINK: 1
   VALUE: 3
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/29/2018
   SUBJECT: Thought you'd want this.
-  BODY_IMG: {fileID: 0}
+  BODY_IMG: {fileID: 21300000, guid: 64e4b90005b824f42ba8cc0debccd717, type: 3}
   BODY_TEXT: 
   SENDER: Barry Tsai
-  KEY: 40
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 1
   REJECTED_EMAIL: 1
+  STORY_LINK: 1
