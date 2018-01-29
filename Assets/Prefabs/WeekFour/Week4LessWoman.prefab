@@ -59,11 +59,10 @@ MonoBehaviour:
   DATE: 02/01/2018
   SUBJECT: Important Petition
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: 'Hey lily_x_x,NEWLINENEWLINEWe''re excited to announce The Chinese New
-    Year seasonal cosmetics set for DragonsKeep: Immortal Soldier!NEWLINEFor a limited
-    time only, get the Eastern dragon skin and classic Chinese costumes!NEWLINENEWLINEAll
-    products sold in lootboxes with varying degrees of chance.NEWLINENEWLINEActivision'
-  SENDER: Activision
+  BODY_TEXT: Hey User,NEWLINENEWLINETired of being abused by modern women? Sign the
+    petition below so we can force Congress to change women's rights! Women shouldn't
+    be allowed to leave the house.NEWLINENEWLINEwww.change4men.com/no_womanNEWLINENEWLINEChange4Men
+  SENDER: Change4Men
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0

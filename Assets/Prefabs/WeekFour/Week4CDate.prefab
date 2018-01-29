@@ -58,7 +58,7 @@ MonoBehaviour:
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/30/2018
   SUBJECT: Is this you? >:)
-  BODY_IMG: {fileID: 0}
+  BODY_IMG: {fileID: 21300000, guid: e157b25665bfa3e478f37907e568ad0c, type: 3}
   BODY_TEXT: 
   SENDER: Mike Fleming
   EMAIL_IMPORTANT: 0
