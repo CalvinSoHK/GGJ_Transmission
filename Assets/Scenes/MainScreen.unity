@@ -3531,6 +3531,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2020007924}
+        m_MethodName: resetScroll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &938053544
@@ -4311,7 +4322,7 @@ GameObject:
   - component: {fileID: 1430199895}
   m_Layer: 5
   m_Name: Scroll View
-  m_TagString: Untagged
+  m_TagString: ScrollView2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7549,6 +7560,7 @@ MonoBehaviour:
   DESKTOP: {fileID: 1452846151}
   PLAYER_NAME: 
   BM: {fileID: 1818859082}
+  ToolTip: {fileID: 2004191699}
 --- !u!4 &2020007925
 Transform:
   m_ObjectHideFlags: 0
@@ -7951,7 +7963,7 @@ GameObject:
   - component: {fileID: 2097065561}
   m_Layer: 5
   m_Name: Scroll View
-  m_TagString: Untagged
+  m_TagString: ScrollView1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
