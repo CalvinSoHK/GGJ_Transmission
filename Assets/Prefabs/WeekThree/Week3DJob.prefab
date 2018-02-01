@@ -62,9 +62,9 @@ MonoBehaviour:
   SUBJECT: Not A Problem
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Dear Ms. Tsai,NEWLINENEWLINE No Problem at all. I assumed the email might
-    not have sent properly. However the job starts tomorrow. It would be best if we
-    could meet today so i could fill you in on the details. Maybe after work?NEWLINENEWLINE
-    Kind RegardsNEWLINE Joseph Bates
+    not have sent properly. However, the job starts tomorrow. It would be best if
+    we could meet today so I could fill you in on the details. Maybe after work?NEWLINENEWLINE
+    Kind Regards,NEWLINE Joseph Bates
   SENDER: Joseph Bates
   EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0

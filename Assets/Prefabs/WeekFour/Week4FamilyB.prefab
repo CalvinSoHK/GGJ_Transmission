@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 41
   TYPE: 1
-  STORY_LINK: 1
   VALUE: 3
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
@@ -61,14 +61,14 @@ MonoBehaviour:
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Dear Lily,NEWLINENEWLINEWe had a great picnic in Central Park, reminiscing
     about you and your brother when you were young. Do you remember when we used to
-    bake cookies before your father came home? Your brother made such a mess everytime.
-    At least you turned out a great cook.NEWLINENEWLINEThis is probably the last time
-    I'll get to talk to you. I love you so much Lily. I'm so sorry for ruining our
-    relationship over such a trivial thing. Regardless of who you are with I know
+    bake cookies before your father came home? Your brother made such a mess every
+    time. At least you turned out a great cook.NEWLINENEWLINEThis is probably the
+    last time I'll get to talk to you. I love you so much Lily. I'm so sorry for ruining
+    our relationship over such a trivial thing. Regardless of who you are with I know
     you'll make their lives so much brighter, just like as you did with mine.NEWLINENEWLINEI
-    love you.NEWLINENEWLINEMom
+    love you,NEWLINENEWLINEMom
   SENDER: Mom
-  KEY: 41
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 1
   REJECTED_EMAIL: 0
+  STORY_LINK: 1

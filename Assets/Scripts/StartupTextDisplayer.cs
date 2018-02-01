@@ -15,7 +15,7 @@ public class StartupTextDisplayer : MonoBehaviour {
     int currentLineBreak = 0;
     int currentStop = 0;
 
-    int currentLength = 0, maxLength = 10;
+    int currentLength = 0, maxLength = 30;
 
     string[] possibleLC = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "space" }; //all possible lower case letters
     string[] possibleUC = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}; //all possible upper case letters
@@ -71,6 +71,7 @@ public class StartupTextDisplayer : MonoBehaviour {
                 if(currentLetterIndex == currentLine.Length - 1)
                 {
                     waitTime = 0.01f;
+                    UI_Text.text += currentLine[currentLetterIndex];
                     UI_Text.text += "\n";
                     setCurrentState(TypingState.PlayerTyping);
                 }

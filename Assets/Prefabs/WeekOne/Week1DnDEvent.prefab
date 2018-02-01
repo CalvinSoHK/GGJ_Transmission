@@ -51,19 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 5
   TYPE: 0
-  STORY_LINK: 0
   VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/10/2018
-  SUBJECT: 'Next DnD Session, the Commons, 01/12/2018 '
+  SUBJECT: 'Next D&D Session, the Commons, 01/12/2018 '
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Hey Lily,NEWLINENEWLINEIt's DnD Organizer Drake, here to tell you our
-    next session of DnD will be taking place at the Commons, 01/12/2018. Come at the
+  BODY_TEXT: Hey Lily,NEWLINENEWLINEIt's D&D Organizer Drake, here to tell you our
+    next session of D&D will be taking place at the Commons, 01/12/2018. Come at the
     usual time with your character sheets for a romp through the Bygarfian Wastelands!NEWLINENEWLINEFrom,NEWLINEDrake
   SENDER: drake@gamerzone.net
-  KEY: 5
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

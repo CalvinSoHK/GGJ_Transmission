@@ -63,10 +63,10 @@ MonoBehaviour:
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Lily,NEWLINENEWLINEAre you serious? Why haven't you responded to Mom
     yet. How many more months before you get over yourself and come back to this family?
-    Mom didn't want me to be the one to tell you this, but you Lily are an incredibly
+    Mom didn't want me to be the one to tell you this, but you, Lily, are an incredibly
     irresponsible daughter. Your mother discovered she has stage 4 breast cancer just
-    before the New Year. She doesn't have that much to live so stop wasting time and
-    reply to her.NEWLINENEWLINEDad
+    before the New Year. She doesn't have that much time to live so stop wasting time
+    and reply to her.NEWLINENEWLINEDad
   SENDER: Father
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0

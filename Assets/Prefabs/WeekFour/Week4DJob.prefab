@@ -61,8 +61,7 @@ MonoBehaviour:
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Lily,NEWLINENEWLINENo point in even talking to anyone about what happenedNEWLINEIt
     is not like anyone would believe you; I own this company.
-  SENDER: Lily,NEWLINENEWLINENo point in even talking to anyone about what happenedNEWLINEIt
-    is not like anyone would believe you; I own this company.
+  SENDER: '#^$%!@psof.com'
   EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
