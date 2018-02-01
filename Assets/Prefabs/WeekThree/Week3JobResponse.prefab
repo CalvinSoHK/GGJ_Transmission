@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 36
   TYPE: 0
-  STORY_LINK: 0
   VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
@@ -60,12 +60,12 @@ MonoBehaviour:
   SUBJECT: Interview for next quarter.
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Dear Lily,NEWLINENEWLINEA friend recommended you for a posting and we
-    were intrigued by your portfolio and job experience. You seem to have a knack
+    were intrigued by your portfolio and job experience. You seem to have the knack
     for problem solving we need for our next big game. We're super excited at the
     prospect of working with you.NEWLINENEWLINEUnfortunately, you will be competing
     with two other applicants. Please respond to reserve an interview appointment.NEWLINENEWLINEFrom,NEWLINEMayNEWLINENEWLINERealLifeRPGMakers
   SENDER: may@realliferpgmakers.com
-  KEY: 36
   EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

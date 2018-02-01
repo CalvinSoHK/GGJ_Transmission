@@ -51,18 +51,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 22
   TYPE: 4
-  STORY_LINK: 0
   VALUE: 1
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/19/2018
   SUBJECT: Your inbox is full
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Your inbox is full! Click on the link below and fill out the credit card
-    information to upgrade to get the rest of your emails!NEWLINENEWLINEwww.gmail_email.com/get_credit
+  BODY_TEXT: Your inbox is full! Click on the link below and fill out your credit
+    card information to upgrade to get the rest of your emails!NEWLINENEWLINEwww.gmail_email.com/get_credit
   SENDER: gmail@real_emails.com
-  KEY: 22
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

@@ -51,13 +51,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 4
   TYPE: 0
-  STORY_LINK: 0
   VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/08/2018
-  SUBJECT: ' 2017 1098-T Taxform Availible!'
+  SUBJECT: 2017 1098-T Taxform Available!
   BODY_IMG: {fileID: 0}
   BODY_TEXT: IRS Form 1098-T is entitled "Tuition Statement," and contains information
     to assist the IRS and you in determining if you are eligible to claim educational
@@ -74,7 +74,7 @@ MonoBehaviour:
     Bursar eSuite. In order to view the 1098-T form, please ensure that your pop-up
     blocker is disabled.
   SENDER: Columbia Bursar
-  KEY: 4
   EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

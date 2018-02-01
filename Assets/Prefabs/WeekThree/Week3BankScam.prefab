@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 38
   TYPE: 4
-  STORY_LINK: 0
   VALUE: 1
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
@@ -61,13 +61,13 @@ MonoBehaviour:
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Dear customer,NEWLINENEWLINEMake sure you jump on our new super duper
     package, named the Premium Gold Standard Package. A low sum of $0.05 will allow
-    you to get started and join the growing club of our Premium Gold Standard Package
-    Club. Simply put in all of your credit card information in the below link and
-    enjoy all the benefits!NEWLINENEWLINEYes you need to put your security code, so
-    we can check it is a real card.NEWLINENEWLINEwww.bankofamerika/rip_customer/XKWJ2KAL56NEWLINENEWLINEBank
+    you to get started and join the growing community of our Premium Gold Standard
+    Package Club. Simply put in all of your credit card information in the link below
+    and enjoy all the benefits!NEWLINENEWLINEYes you need to put your security code,
+    so we can check it is a real card.NEWLINENEWLINEwww.bankofamerika/rip_customer/XKWJ2KAL56NEWLINENEWLINEBank
     of Amerika
   SENDER: Bank of Amerika
-  KEY: 38
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

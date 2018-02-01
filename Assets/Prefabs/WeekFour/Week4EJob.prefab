@@ -62,9 +62,9 @@ MonoBehaviour:
   BODY_TEXT: Dear Ms. Tsai,NEWLINENEWLINE Due to your comportment during the last
     few weeks, we must let you go. Your inability to answer important company emails
     in a timely manner was the leading cause for your termination. Furthermore, your
-    attitude towards me, your employer, was far from exemplary. You could have a fruitfull
-    career if you listened to waht I said more carefully.NEWLINENEWLINE Best of Luck,NEWLINE
-    Joseph Bates
+    attitude towards me, your employer, was far from exemplary. You could have had
+    a fruitful career if you listened to what I said more carefully.NEWLINENEWLINE
+    Best of Luck,NEWLINE Joseph Bates
   SENDER: Joseph Bates
   EMAIL_IMPORTANT: 1
   ACCEPTED_EMAIL: 0

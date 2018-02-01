@@ -61,10 +61,11 @@ MonoBehaviour:
   DATE: 01/16/2018
   SUBJECT: Hey...
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Hey...NEWLINENEWLINEI Know I'm not supposed to double text; I should
-    just take the hint right? But I thought we really hit it off a few days ago. I
-    don't mind that you stood me up for dinner. You must just have forgot or missed
-    my last email...NEWLINEShould we try again for this weekend? Please let me know.NEWLINENEWLINEMike
+  BODY_TEXT: Hey...NEWLINENEWLINEI know I'm not supposed to double text; I should
+    just take the hint, right? But I thought we really hit it off a few days ago.
+    I don't mind that you stood me up for dinner. You must have just forgotten or
+    missed my last email...NEWLINEShould we try again for this weekend? Please let
+    me know.NEWLINENEWLINEMike
   SENDER: Mike Fleming
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0

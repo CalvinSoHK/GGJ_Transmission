@@ -51,19 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 16
   TYPE: 2
-  STORY_LINK: 0
   VALUE: 0
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/13/2018
   SUBJECT: 8 people retweeted you!
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: 'Congratulations Lily!NEWLINENEWLINE8 people retweeted you on your Twitter
-    @LilYPunk1205NEWLINENEWLINETweet:"Use this code if you''re getting into OakTale!
-    X7YYH2A" '
+  BODY_TEXT: Congratulations Lily!NEWLINENEWLINE8 people retweeted you on your Twitter
+    @LilYPunk1205NEWLINENEWLINETweet:"Use this code if you're getting into OakTale!
+    X7YYH2A"
   SENDER: Twitter
-  KEY: 16
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

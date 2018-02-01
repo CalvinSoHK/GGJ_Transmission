@@ -51,19 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 42
   TYPE: 1
-  STORY_LINK: 1
   VALUE: 3
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/29/2018
   SUBJECT: No daughter of mine
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Lily,NEWLINENEWLINEYou are no daughter of mine. You might not have stopped
-    being my daughter when you shacked up with that girl, but now.NEWLINENEWLINEDon't
-    talk to me or your brother ever again.
+  BODY_TEXT: "Lily,NEWLINENEWLINEYou are no daughter of mine. You might not have stopped
+    being my daughter when you shacked up with that girl, but now\u2026NEWLINENEWLINEDon't
+    talk to me or your brother ever again."
   SENDER: Dad
-  KEY: 42
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 1

@@ -889,7 +889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -366}
+  m_AnchoredPosition: {x: 374, y: -245}
   m_SizeDelta: {x: 451.9, y: 256.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690517088
@@ -1151,7 +1151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -245.20003}
+  m_AnchoredPosition: {x: -357, y: -245.20001}
   m_SizeDelta: {x: 451.9, y: 256.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2050684711
@@ -1271,13 +1271,13 @@ MonoBehaviour:
     change to the software or a corrupted file might be the cause. To fix the problem
     we will now attempt to scan all concerned files. This process might take a few
     minutes... It looks like the following file has not been properly installed: C:\Users\Lily\AIDE\Setup_Installation\aide_NAME.txt
-    To fix this, we will temporarly overwrite the contents of the corrupted file.
+    To fix this, we will temporarily overwrite the contents of the corrupted file.
     This process might take a few seconds... THE FILE [aide_NAME.txt] HAS SUCCESFULLY
-    BEEN OVERWRITTEN. A.I.D.E WILL NOW PERFORM THE FINAL STEPS TO COMPLETE THE INSTALATION.
-    ENTER THE NAME THE USER WILL CALL YOU BY... '
+    BEEN OVERWRITTEN. A.I.D.E WILL NOW PERFORM THE FINAL STEPS TO COMPLETE THE INSTALLATION.
+    ENTER THE NAME THE USER WILL CALL YOU BY...'
   UI_Text: {fileID: 1350628495}
-  stopIndex: f3000000e0010000
-  lineBreakIndex: f30000003501000069010000e00100008e020000
+  stopIndex: f3000000e1010000
+  lineBreakIndex: f30000003501000069010000e10100008e020000
   AIDE_Name: 
   UI_1: {fileID: 1763595408}
   UI_2: {fileID: 2050684709}
