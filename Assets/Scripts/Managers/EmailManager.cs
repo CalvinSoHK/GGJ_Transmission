@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 //Handles emails for the game. Keeps a reference to every single one.
 public class EmailManager : MonoBehaviour {
@@ -44,6 +45,8 @@ public class EmailManager : MonoBehaviour {
 
     //The background manager
     public BackgroundManager BM;
+
+    public GameObject ToolTip;
 
 	//Function to evaluate all emails
     public void EvaluateEmails()
@@ -218,6 +221,27 @@ public class EmailManager : MonoBehaviour {
     public void SetCurrentState(int INT_TEMP)
     {
         STATE = (EmailSiteState)(INT_TEMP);
+        //FindScrollView(GameObject.Find("Desktop"), "Scroll View").GetComponent<ScrollRect>().verticalNormalizedPosition = 1.0f;
+    }
+
+    public void resetScroll()
+    {
+        ToolTip.SetActive(false);
+        FindScrollView(GameObject.Find("Desktop"), "Scroll View").GetComponent<ScrollRect>().verticalNormalizedPosition = 1.0f;
+    }
+
+    public GameObject FindScrollView(GameObject parent, string name)
+    {
+        //Searches through all the children of the given parent and gives us the one with right name
+        Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in trs)
+        {
+            if (t.name == name && t.tag == "ScrollView1")
+            {
+                return t.gameObject;
+            }
+        }
+        return null;
     }
 
     //Function that sets the selected emails status to Accepted
@@ -322,6 +346,7 @@ public class EmailManager : MonoBehaviour {
         GameStateManager.SetCurrentState((GameStateManager.GameState)i);
     }
 
+    
     //Helper function to find the object since they are inactive
     public GameObject FindObject(GameObject parent, string name)
     {

@@ -8,7 +8,7 @@ public class EntryController : MonoBehaviour {
 
     //Saves this email for displaying on click
     public EmailController EMAIL;
-
+    public ScrollRect emailScroll;
     //Holds the UI objects we are going to be sending our info to.
     public Text SENDER_TEXT, SUBJECT_TEXT, DATE_TEXT;
 
@@ -23,5 +23,21 @@ public class EntryController : MonoBehaviour {
     public void DisplayThisEmail()
     {
         GameObject.Find("GameManager").GetComponent<EmailManager>().DisplayEmail(EMAIL);
+        FindScrollView(GameObject.Find("Desktop"), "Scroll View").GetComponent<ScrollRect>().verticalNormalizedPosition = 1.0f;        
+    }
+
+    //Helper function to find the object since they are inactive
+    public GameObject FindScrollView(GameObject parent, string name)
+    {
+        //Searches through all the children of the given parent and gives us the one with right name
+        Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in trs)
+        {
+            if (t.name == name && t.tag == "ScrollView2")
+            {
+                return t.gameObject;
+            }
+        }
+        return null;
     }
 }
