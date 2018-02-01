@@ -1757,8 +1757,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 581296134}
-        m_MethodName: ExitGameCall
+      - m_Target: {fileID: 2020007924}
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4744,7 +4744,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1687742787}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7299,7 +7299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Restart
 --- !u!222 &1969441005
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7546,6 +7546,7 @@ MonoBehaviour:
   PROCESS_SCREEN: {fileID: 336523859}
   STATUS_BAR: {fileID: 2118017647}
   END_SCREEN: {fileID: 741350972}
+  DESKTOP: {fileID: 1452846151}
   PLAYER_NAME: 
   BM: {fileID: 1818859082}
 --- !u!4 &2020007925
