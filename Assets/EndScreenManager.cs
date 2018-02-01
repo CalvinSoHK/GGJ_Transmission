@@ -37,7 +37,7 @@ public class EndScreenManager : MonoBehaviour {
         }
         else //Bad ending
         {
-            RET_STRING += "Mom was the one to ruin our relationship. She said so meany despicable things about Mary, and while I'm not with Mary anymore, it's crazy how backwards she was. I'm a bit sad she's gone, but it's not like she was a big part of my life anyways... I miss her...\n";
+            RET_STRING += "Mom was the one to ruin our relationship. She said so many despicable things about Mary, and while I'm not with Mary anymore, it's crazy how backwards she was. I'm a bit sad she's gone, but it's not like she was a big part of my life anyways... I miss her...\n";
         }
 
         //Handle Date story

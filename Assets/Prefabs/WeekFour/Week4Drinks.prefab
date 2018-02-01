@@ -51,23 +51,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 42
   TYPE: 2
-  STORY_LINK: 0
   VALUE: 0
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/28/2018
-  SUBJECT: Will of Tsai Ying Fu
+  SUBJECT: Drinks at the Bar!
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Dear Lily Tsai,NEWLINENEWLINEWe regret to inform you the recent passing
-    of your mother, Tsai Ying Fu. Following the statements in her will, you have been
-    given half of her overall wealth.NEWLINENEWLINEUnfortunately, your father has
-    decided to renounce your status as her daughter, and has filed the correct paperwork.
-    If you want to refute these claims and get your rightfully owned wealth, please
-    email us back and we can begin the procedure.NEWLINENEWLINEFrom,NEWLINEKurtisNEWLINENEWLINEWendell
-    Law Firm
-  SENDER: kurtis@wendelllaw.com
-  KEY: 42
+  BODY_TEXT: Hey girls,NEWLINENEWLINEWanna go barhopping next weekend? Haven't seen
+    all of you for months! The usual place, 9:00pm.NEWLINENEWLINEIf anyone hooks up
+    with someone outside our group drinks are on them!NEWLINENEWLINExoNEWLINEConnie
+  SENDER: Connie Wong
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

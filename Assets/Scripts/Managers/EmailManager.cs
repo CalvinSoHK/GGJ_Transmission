@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Handles emails for the game. Keeps a reference to every single one.
 public class EmailManager : MonoBehaviour {
 
     //Make this an instance
-    public static EmailManager instance = null;
+    //public static EmailManager instance = null;
 
     //Possible actions taken by the player
     public enum PlayerAction { Ignored, Accepted, Declined, Important };
@@ -33,7 +34,7 @@ public class EmailManager : MonoBehaviour {
     public bool[] STORY_ENDING = new bool[3];
 
     //The two gameobjects that constitute our two different type of screens
-    public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN, PROCESS_SCREEN, STATUS_BAR, END_SCREEN;
+    public GameObject ALL_EMAIL_SCREEN, ONE_EMAIL_SCREEN, DAY_BEGIN_SCREEN, PROCESS_SCREEN, STATUS_BAR, END_SCREEN, DESKTOP;
 
     //The selected email
     EmailController SELECTED_EMAIL;
@@ -265,6 +266,16 @@ public class EmailManager : MonoBehaviour {
         }
     }
 
+    //Init function for the entire game
+    public void InitEmailList()
+    {
+        HAPPINESS = 0;
+        WEEK = 0;
+        EMAIL_LIST.Clear();
+        SetCurrentState(EmailSiteState.AllEmails);
+
+    }
+
     //Load in extra emails for a given week
     public void LoadEmails()
     {
@@ -311,9 +322,32 @@ public class EmailManager : MonoBehaviour {
         GameStateManager.SetCurrentState((GameStateManager.GameState)i);
     }
 
+    //Helper function to find the object since they are inactive
+    public GameObject FindObject(GameObject parent, string name)
+    {
+        //Searches through all the children of the given parent and gives us the one with right name
+        Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
+        foreach (Transform t in trs)
+        {
+            if (t.name == name)
+            {
+                return t.gameObject;
+            }
+        }
+        return null;
+    }
+
+    //Function to restart the game
+    public void Restart()
+    {
+        SetGameStateManager(1);
+        SceneManager.LoadScene("StartScreen");
+    }
+
     //Make this script a singleton
     void Awake()
     {
+        /*
         //Check if instance already exists
         if (instance == null)
 
@@ -327,7 +361,7 @@ public class EmailManager : MonoBehaviour {
             Destroy(gameObject);
 
         //Sets this to not be destroyed when reloading scene
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);*/
     }
 
     //Handle states
@@ -336,10 +370,17 @@ public class EmailManager : MonoBehaviour {
         //Get the game state
         GameStateManager.GameState GAME_STATE = GameStateManager.STATE;
 
+        //Always be able to reset
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Restart();    
+        }
+
         //Handle each game state
         switch (GAME_STATE)
         {
             case GameStateManager.GameState.Init:
+               
                 //Increment our week number
                 WEEK++;
 
@@ -431,6 +472,33 @@ public class EmailManager : MonoBehaviour {
                     }
                    
                 }
+                break;
+            case GameStateManager.GameState.Restarting:
+                Debug.Log("restarting");
+
+                //Find any missing objects
+                if (DAY_BEGIN_SCREEN == null)
+                {
+                    Debug.Log("Looking for replacements");
+                    DESKTOP = GameObject.Find("Desktop");
+                    DAY_BEGIN_SCREEN = FindObject(DESKTOP, "Day Begin Screen");
+                    ALL_EMAIL_SCREEN = FindObject(DESKTOP, "All Emails Screen");
+                    ONE_EMAIL_SCREEN = FindObject(DESKTOP, "One Email Screen");
+                    PROCESS_SCREEN = FindObject(DESKTOP, "Process Screen");
+                    STATUS_BAR = FindObject(DESKTOP, "StatusBar");
+                    END_SCREEN = FindObject(DESKTOP, "End Screen");
+                    BM = GameObject.Find("Background").GetComponent<BackgroundManager>();
+
+                    if(DAY_BEGIN_SCREEN != null)
+                    {
+                        Debug.Log("Replacement found");
+                        //Set to init.
+                        InitActionList();
+                        InitEmailList();
+                        SetGameStateManager(1);
+                    }
+                }
+
                 break;
             default:
                 Debug.Log("Invalid game state!");

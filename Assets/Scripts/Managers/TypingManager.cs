@@ -46,8 +46,8 @@ public class TypingManager : MonoBehaviour {
                 //call to get the stop index
                 //call to get the delete index
                 
-                float HAPPINESS = EmailManager.instance.HAPPINESS;
-                int WEEK = EmailManager.instance.WEEK;
+                float HAPPINESS = GameObject.Find("GameManager").GetComponent<EmailManager>().HAPPINESS;
+                int WEEK = GameObject.Find("GameManager").GetComponent<EmailManager>().WEEK;
                 
                 if (WEEK != 0)
                 {
