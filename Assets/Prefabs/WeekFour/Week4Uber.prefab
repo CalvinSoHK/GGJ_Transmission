@@ -51,19 +51,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 53
   TYPE: 2
-  STORY_LINK: 0
   VALUE: 0
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/28/2018
-  SUBJECT: Drinks at the Bar!
+  SUBJECT: Uber, rider notification.
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: Hey girls,NEWLINENEWLINEWanna go barhopping next weekend? Haven't seen
-    all of you for months! The usual place, 9:00pm.NEWLINENEWLINEIf anyone hooks up
-    with someone outside our group drinks are on them!NEWLINENEWLINExoNEWLINEConnie
-  SENDER: Connie Wong
-  KEY: 53
+  BODY_TEXT: Uber here.NEWLINENEWLINEYou rode 6 times in the past month. Make sure
+    to give those riders reviews!NEWLINENEWLINEUber
+  SENDER: Uber
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0

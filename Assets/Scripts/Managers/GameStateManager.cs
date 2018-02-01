@@ -6,7 +6,7 @@ using UnityEngine;
 public static class GameStateManager {
 
     //Enum for our game states
-    public enum GameState { Waiting, Init, PlayerInput, Processing, End, Start};
+    public enum GameState { Waiting, Init, PlayerInput, Processing, End, Start, Restarting};
     public static GameState STATE = GameState.Waiting;
 
     //Time since we entered this state

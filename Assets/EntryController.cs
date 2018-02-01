@@ -22,6 +22,6 @@ public class EntryController : MonoBehaviour {
     //Function that displays the given email
     public void DisplayThisEmail()
     {
-        EmailManager.instance.DisplayEmail(EMAIL);
+        GameObject.Find("GameManager").GetComponent<EmailManager>().DisplayEmail(EMAIL);
     }
 }
