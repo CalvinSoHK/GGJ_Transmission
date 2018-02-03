@@ -8,6 +8,7 @@ public class StartupTextDisplayer : MonoBehaviour {
     public enum TypingState { Idle, Setup, Typing, PlayerTyping, Reset, Stop }; //The states that could occur for typing
     public TypingState currentTypingState;
     public string currentLine; //current line that needs to be displayed
+    public GameObject blinker;
     int currentLetterIndex = 0; //current letter that needs to be displayed       
     public Text UI_Text; //UI reference to the Text object
     public int[] stopIndex;
@@ -80,6 +81,14 @@ public class StartupTextDisplayer : MonoBehaviour {
                 break;
 
             case TypingState.PlayerTyping:
+                
+                if(currentLength == 0)
+                {
+                    blinker.SetActive(true);
+                }else
+                {
+                    blinker.SetActive(false);
+                }
                 if(currentLength < maxLength)
                 {
                     if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.LeftShift)) //if the player presses shift, it should be upper case

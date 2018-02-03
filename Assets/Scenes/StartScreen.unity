@@ -462,6 +462,92 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149998319}
+--- !u!1 &1237589040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1237589041}
+  - component: {fileID: 1237589044}
+  - component: {fileID: 1237589043}
+  - component: {fileID: 1237589042}
+  m_Layer: 5
+  m_Name: LineBlinker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1237589041
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237589040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05749, y: 0.3675087, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1301062066}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -906.8, y: -147.1}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1237589042
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237589040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 664553b0de918fa43b656ea12b1892ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1237589043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237589040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1237589044
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237589040}
 --- !u!1 &1301062062
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +639,7 @@ RectTransform:
   - {fileID: 2050684710}
   - {fileID: 1690517087}
   - {fileID: 1350628493}
+  - {fileID: 1237589041}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1273,11 +1360,12 @@ MonoBehaviour:
     minutes... It looks like the following file has not been properly installed: C:\Users\Lily\AIDE\Setup_Installation\aide_NAME.txt
     To fix this, we will temporarily overwrite the contents of the corrupted file.
     This process might take a few seconds... THE FILE [aide_NAME.txt] HAS SUCCESFULLY
-    BEEN OVERWRITTEN. A.I.D.E WILL NOW PERFORM THE FINAL STEPS TO COMPLETE THE INSTALLATION.
-    ENTER THE NAME THE USER WILL CALL YOU BY...'
+    BEEN OVERWRITTEN.  A.I.D.E WILL NOW PERFORM THE FINAL STEPS TO COMPLETE THE INSTALLATION.
+    ENTER THE NAME THE USER WILL CALL YOU BY:'
+  blinker: {fileID: 1237589040}
   UI_Text: {fileID: 1350628495}
   stopIndex: f3000000e1010000
-  lineBreakIndex: f30000003501000069010000e10100008e020000
+  lineBreakIndex: f30000003501000069010000e10100001c0200001d020000640200008e020000
   AIDE_Name: 
   UI_1: {fileID: 1763595408}
   UI_2: {fileID: 2050684709}
