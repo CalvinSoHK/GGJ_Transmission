@@ -365,7 +365,7 @@ public class EmailManager : MonoBehaviour {
     //Function to restart the game
     public void Restart()
     {
-        SetGameStateManager(1);
+        SetGameStateManager(0);
         SceneManager.LoadScene("StartScreen");
     }
 
