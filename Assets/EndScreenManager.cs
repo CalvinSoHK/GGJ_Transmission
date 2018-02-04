@@ -64,15 +64,15 @@ public class EndScreenManager : MonoBehaviour {
         //Worst ending
         if (EM.HAPPINESS < BAD_ENDING_THRESHOLD)
         {
-            RET_STRING += "I think this bot did more harm than good. My life has gotten so much worse. I'm not sure if I missed some important emails but the way life has been going its like a storm. \n";
+            RET_STRING += "I think this bot did more harm than good. My life has gotten so much worse. I'm not sure if I missed some important emails but the way life has been going its like a storm.";
         }//Bad ending
         else if(EM.HAPPINESS < GOOD_ENDING_THRESHOLD)
         {
-            RET_STRING += "The AIDE System did a bit of work. I noticed a bit less ads but it still seems like I get scary messages once in a while. I'll keep this software a while longer.\n";
+            RET_STRING += "The AIDE System did a bit of work. I noticed a bit less ads but it still seems like I get scary messages once in a while. I'll keep this software a while longer.";
         }//Good ending
         else
         {
-            RET_STRING += "AIDE System has been doing good work! My emails were mostly good, or at the very least, relevant to my life. I love this software.\n";
+            RET_STRING += "AIDE System has been doing good work! My emails were mostly good, or at the very least, relevant to my life. I love this software.";
         }
 
 
