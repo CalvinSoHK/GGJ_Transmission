@@ -47,7 +47,7 @@ public class EndScreenManager : MonoBehaviour {
         }
         else
         {
-            RET_STRING += "Mike just wouldn't stop messaging me this whole month. He's been saying the most offensive, insensitive drivel I've heard in years; he's almost just as bad as my boss. I sould have stopped messaging him earlier on. His actions have gone too far. Hopefully he'll lose interest after a while...\n\n";
+            RET_STRING += "Mike just wouldn't stop messaging me this whole month. He's been saying the most offensive, insensitive drivel I've heard in years; he's almost just as bad as my boss. I should have stopped messaging him earlier on. His actions have gone too far. Hopefully he'll lose interest after a while...\n\n";
         }
 
         //Handle Job story
