@@ -27,6 +27,8 @@ public class StartupTextDisplayer : MonoBehaviour {
 
     public GameObject UI_1, UI_2, UI_3;
 
+    float blinkerTimer = 0.0f; 
+
     // Use this for initialization
     void Start()
     {
@@ -75,6 +77,7 @@ public class StartupTextDisplayer : MonoBehaviour {
                     UI_Text.text += currentLine[currentLetterIndex];
                     UI_Text.text += "\n";
                     setCurrentState(TypingState.PlayerTyping);
+                    blinkerTimer = Time.time;
                 }
                 
 
@@ -82,7 +85,7 @@ public class StartupTextDisplayer : MonoBehaviour {
 
             case TypingState.PlayerTyping:
                 
-                if(currentLength == 0)
+                if(Time.time - blinkerTimer > 2)
                 {
                     blinker.SetActive(true);
                 }else
