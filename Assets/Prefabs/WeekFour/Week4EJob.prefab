@@ -67,6 +67,6 @@ MonoBehaviour:
     Best of Luck,NEWLINE Joseph Bates
   SENDER: Joseph Bates
   EMAIL_IMPORTANT: 1
-  ACCEPTED_EMAIL: 0
+  ACCEPTED_EMAIL: 1
   REJECTED_EMAIL: 1
   STORY_LINK: 3

@@ -92,6 +92,13 @@ public class StartupTextDisplayer : MonoBehaviour {
                 {
                     blinker.SetActive(false);
                 }
+                if(currentLength == 0)
+                {
+                    blinker.SetActive(true);
+                }else
+                {
+                    blinker.SetActive(false);
+                }
                 if(currentLength < maxLength)
                 {
                     if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.LeftShift)) //if the player presses shift, it should be upper case
