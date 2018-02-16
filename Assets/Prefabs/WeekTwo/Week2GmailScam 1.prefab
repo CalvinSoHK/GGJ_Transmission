@@ -60,8 +60,8 @@ MonoBehaviour:
   SUBJECT: Your inbox is full
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Your inbox is full! Click on the link below and fill out your credit
-    card information to upgrade to get the rest of your emails!NEWLINENEWLINEwww.gmail_email.com/get_credit
-  SENDER: gmail@real_emails.com
+    card information to upgrade to get the rest of your emails!NEWLINENEWLINEwww.gee_mail_email.com/get_credit
+  SENDER: gee_mail@real_emails.com
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0

@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 21
   TYPE: 4
-  STORY_LINK: 0
   VALUE: 1
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
@@ -60,11 +60,11 @@ MonoBehaviour:
   SUBJECT: Purchase completed
   BODY_IMG: {fileID: 0}
   BODY_TEXT: Hey valued customer,NEWLINENEWLINEThank you for your purchase of 5000
-    1L Poland Springs Water Bottles at a total of $3500. Your shipment should arrive
+    1L Poland Springs Water Bottles at a total of $13,500. Your shipment should arrive
     shortly.NEWLINENEWLINEIf you think this purchase is incorrect, click on the link
-    below:NEWLINENEWLINEwww.amazone.com/purchase_error/XHN73E2HG4B
-  SENDER: Amazone
-  KEY: 21
+    below:NEWLINENEWLINEwww.ama-zone.com/purchase_error/XHN73E2HG4B
+  SENDER: Ama-Zone
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0
