@@ -51,22 +51,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6499a01445f4e94293e6c3942d31ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KEY: 18
   TYPE: 0
-  STORY_LINK: 0
   VALUE: 2
   ACCEPTED_NEXT: {fileID: 0}
   REJECTED_NEXT: {fileID: 0}
   DATE: 01/16/2018
   SUBJECT: Perfect Job for You!
   BODY_IMG: {fileID: 0}
-  BODY_TEXT: 'Hey gurl,NEWLINEI was browsing the job postings on gotaku.com, and I
+  BODY_TEXT: 'Hey gurl,NEWLINEI was browsing the job postings on kotaku.com, and I
     saw this physical games posting perfect for you! They need someone to design some
     of the more complicated toys in a kid''s game. Make sure you apply alright? I
-    know you aren''t that happy at your current job anyway.NEWLINENEWLINEwwww.gotaku.com/jobs/RealLifeRPGMakersNEWLINENEWLINEYa
+    know you aren''t that happy at your current job anyway.NEWLINENEWLINEwwww.kotaku.com/jobs/RealLifeRPGMakersNEWLINENEWLINEYa
     gurl,NEWLINEEmilyNEWLINENEWLINEPS: You see that shit Connie''s saying in chat?
     Sure brings me back to engineering school...'
   SENDER: Emily North
-  KEY: 18
   EMAIL_IMPORTANT: 0
   ACCEPTED_EMAIL: 0
   REJECTED_EMAIL: 0
+  STORY_LINK: 0
